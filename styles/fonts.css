@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'Noto Sans Telugu Condensed';
+    src: url('/fonts/NotoSansTelugu_Condensed-Black.ttf') format('truetype');
+    font-weight: 900; 
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Noto Sans Telugu Condensed */
+@font-face {
+  font-family: 'Noto Sans Telugu Condensed';
+  src: url('/fonts/NotoSansTelugu_Condensed-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans Telugu Condensed';
+  src: url('/fonts/NotoSansTelugu_Condensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans Telugu Condensed';
+  src: url('/fonts/NotoSansTelugu_Condensed-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans Telugu Condensed';
+  src: url('/fonts/NotoSansTelugu_Condensed-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans Telugu Condensed';
+  src: url('/fonts/NotoSansTelugu_Condensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans Telugu Condensed';
+  src: url('/fonts/NotoSansTelugu_Condensed-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans Telugu Condensed';
+  src: url('/fonts/NotoSansTelugu_Condensed-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Noto Sans Telugu SemiCondensed */
+@font-face {
+  font-family: 'Noto Sans Telugu SemiCondensed';
+  src: url('/fonts/NotoSansTelugu_SemiCondensed-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Repite para cada peso */
+@font-face {
+  font-family: 'Noto Sans Telugu SemiCondensed';
+  src: url('/fonts/NotoSansTelugu_SemiCondensed-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans Telugu SemiCondensed';
+  src: url('/fonts/NotoSansTelugu_SemiCondensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Telugu SemiCondensed';
+    src: url('/fonts/NotoSansTelugu_SemiCondensed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Telugu SemiCondensed';
+    src: url('/fonts/NotoSansTelugu_SemiCondensed-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Telugu SemiCondensed';
+    src: url('/fonts/NotoSansTelugu_SemiCondensed-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Telugu SemiCondensed';
+    src: url('/fonts/NotoSansTelugu_SemiCondensed-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Telugu SemiCondensed';
+    src: url('/fonts/NotoSansTelugu_SemiCondensed-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Noto Sans Telugu */
+@font-face {
+    font-family: 'Noto Sans Telugu';
+    src: url('/fonts/NotoSansTelugu-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Telugu';
+    src: url('/fonts/NotoSansTelugu-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Telugu';
+    src: url('/fonts/NotoSansTelugu-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Telugu';
+    src: url('/fonts/NotoSansTelugu-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Telugu';
+    src: url('/fonts/NotoSansTelugu-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Telugu';
+    src: url('/fonts/NotoSansTelugu-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Telugu';
+    src: url('/fonts/NotoSansTelugu-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans Telugu';
+    src: url('/fonts/NotoSansTelugu-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Qwigley Regular */
+@font-face {
+    font-family: 'Qwigley';
+    src: url('/fonts/Qwigley-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;   
+}
