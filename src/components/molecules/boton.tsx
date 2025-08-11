@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ReactNode } from "react";
-
+import '/styles/fonts.css'; 
 
 type Variant = "default" | "primary" | "secondary";
 
@@ -14,14 +14,14 @@ interface ButtonProps {
     className?: string;
 }
 
-//  Estilos base 
+
 const baseButtonStyles =
-    "flex flex-row justify-center items-center gap-4 px-4 py-2 " +
-    "w-[193px] h-[54px] rounded-[8px] font-semibold transition-colors duration-200";
-// Variantes 
+    "flex flex-row justify-center items-center gap-4 px-4 py-4 " +
+    "rounded-[8px] font-bold text-[20px] font-['Noto_Sans_Telugu'] transition-colors duration-200";
+
 const variantStyles: Record<Variant, string> = {
-    default: "bg-[#E1EAEF] shadow-[4px_4px_14px_rgba(89,89,89,0.25)] text-black hover:bg-[#d5e0e6]",
-    primary: "bg-blue-600 text-white hover:bg-blue-700 shadow-md",
+    default: "bg-[#E1EAEF] shadow-[4px_4px_14px_rgba(89,89,89,0.25)] text-[#4C4C4C] hover:bg-[#d5e0e6]",
+    primary: "bg-[#E1EAEF] text-white hover:bg-blue-700 shadow-md",
     secondary: "bg-gray-200 text-gray-900 hover:bg-gray-300 shadow"
 };
 

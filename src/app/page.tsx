@@ -1,6 +1,6 @@
 import { Title } from "@/components/molecules/Title";
 import Image from "next/image";
-
+import Button from "@/components/molecules/boton";
 export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
@@ -8,6 +8,11 @@ export default function Home() {
         <Title
           title="Welcome to Next.js with Tailwind CSS"
         />
+        <Button 
+          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          icon={<Image src="/images/phone_in_talk.svg" alt="Phone" width={28} height={28} />}
+          iconPosition="left"
+        >033-48 01 96</Button>
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
