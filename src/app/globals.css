@@ -10,8 +10,11 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-textoscuro: var(--textoscuro);
-  
-  --font-family-noto-telugu: var(--font-noto-sans-telugu), sans-serif;
+
+  /* Custom font families para usar con Tailwind */
+  --font-family-noto-telugu: 'Noto Sans Telugu', sans-serif;
+  --font-family-noto-telugu-semicondensed: 'Noto Sans Telugu SemiCondensed', sans-serif;
+  --font-family-noto-telugu-condensed: 'Noto Sans Telugu Condensed', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
