@@ -1,9 +1,11 @@
 import { Title } from "@/components/molecules/Title";
 import Image from "next/image";
 import Button from "@/components/molecules/boton";
+import Header from "@/components/organism/header";
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-2 pb-2 gap-2 sm:p-8 bg-black">
+              <Header></Header>
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Title
           title="Welcome to Next.js with Tailwind CSS"
@@ -13,6 +15,7 @@ export default function Home() {
           icon={<Image src="/images/phone_in_talk.svg" alt="Phone" width={28} height={28} />}
           iconPosition="left"
         >033-48 01 96</Button>
+
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
