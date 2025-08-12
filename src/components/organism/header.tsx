@@ -3,11 +3,11 @@ import DropDownMenu from "@/components/molecules/dropDownMenu";
 import Button from "@/components/molecules/boton";
 import Image from "next/image";
 
-export default function Header({ transparent = true }: { transparent?: boolean }) {
+export default function Header({ transparent = false }: { transparent?: boolean }) {
     return (
         <header
-        className={`w-full flex justify-between px-4 py-4 ${
-            transparent ? "bg-transparent" : "bg-white"
+        className={`relative w-full h-[112px] flex justify-between px-4 py-4 ${
+            transparent ? "bg-transparent" : "bg-[linear-gradient(179.8deg,rgba(0,0,0,0.70)_8.36%,rgba(0,0,0,0)_96.63%)]"
         }`}
         >
         <Image src="/images/vastporten 2.svg"
