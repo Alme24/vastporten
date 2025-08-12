@@ -13,6 +13,7 @@
 
   /* Custom font families para usar con Tailwind */
   --font-family-noto-telugu: 'Noto Sans Telugu', sans-serif;
+  --font-family-noto-serif-telugu: 'Noto Serif Telugu', serif;
   --font-family-noto-telugu-semicondensed: 'Noto Sans Telugu SemiCondensed', sans-serif;
   --font-family-noto-telugu-condensed: 'Noto Sans Telugu Condensed', sans-serif;
 }
