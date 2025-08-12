@@ -21,7 +21,7 @@ export default function CanvaVideo({
                 Tu navegador no soporta el formato de video.
             </video>
             <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4">
-                <h1 className="text-5xl font-semibold font-(family-name: Noto Sans Telugu)">{title}</h1>
+                <h1 className="text-5xl font-semibold font-family-noto-telugu">{title}</h1>
             </div>
         </div>
     );
