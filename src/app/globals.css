@@ -4,15 +4,18 @@
   --background: #ffffff;
   --foreground: #171717;
   --textoscuro: #4C4C4C;
+  --base-de-botoones: #F4F4F4;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-textoscuro: var(--textoscuro);
+  --color-base-de-botoones: var(--base-de-botoones);
 
   /* Custom font families para usar con Tailwind */
   --font-family-noto-telugu: 'Noto Sans Telugu', sans-serif;
+  --font-family-noto-serif-telugu: 'Noto Serif Telugu', serif;
   --font-family-noto-telugu-semicondensed: 'Noto Sans Telugu SemiCondensed', sans-serif;
   --font-family-noto-telugu-condensed: 'Noto Sans Telugu Condensed', sans-serif;
 }
@@ -23,4 +26,13 @@
     --foreground: #ededed;
     --textoscuro: #4C4C4C;
   }
+}
+
+.custom-input {
+  box-shadow: 
+    4px 4px 8px 0px #59595940 inset,
+    -4px -4px 4px 0px #FFFFFF inset;
+  border-radius: 8px;
+  border: none;
+  padding: 0 12px;
 }
