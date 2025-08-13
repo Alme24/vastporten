@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 
-export default function Home(){
+export default function Search(){
     const [startAnimation, setStartAnimation] = useState(false);
     
     useEffect(() => {

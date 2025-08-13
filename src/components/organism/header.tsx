@@ -27,16 +27,16 @@ export default function Header({ transparent = false }: { transparent?: boolean 
                 { label: "Otros servicios", href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"},
             ]}
             />
-            <Button href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" variant="btnHeader">
+            <Button href="/search" variant="btnHeader">
             Buscar apartamento
             </Button>
-            <Button href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" variant="btnHeader">
+            <Button href="/politics" variant="btnHeader">
             Política de privacidad
             </Button>
             <Button href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" variant="btnHeader">
             ¿Por qué Nosotros?
             </Button>
-            <Button href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" variant="btnHeader">
+            <Button href="/contact" variant="btnHeader">
             Contacto
             </Button>
             <Button 
