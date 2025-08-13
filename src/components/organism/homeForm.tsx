@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function homeForm() {
+export default function HomeForm() {
     return (
         <div className="flex flex-col justify-center items-center bg-base-de-botoones h-[578px] w-[760px] rounded-xl p-14">
             <h2 className=' font-family-noto-telugu font-[600] text-5xl text-center text-textoscuro'>Contáctanos</h2>
@@ -51,4 +51,4 @@ function homeForm() {
     );
 }
 
-export default homeForm;
+
