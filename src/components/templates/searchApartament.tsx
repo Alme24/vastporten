@@ -1,23 +1,42 @@
+"use client";
 import Image from "next/image";
-import Header from "../organism/header";
-import Footer from "../organism/footer";
-import { Title } from "../molecules/Title";
-import Button from "../molecules/boton";
+import Header from "@/components/organism/header";
+import Footer from "@/components/organism/footer";
+import { Title } from "@/components/molecules/Title";
+import Button from "@/components/molecules/boton";
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
-export default function Search(){
+
+export default function Home(){
+    const [startAnimation, setStartAnimation] = useState(false);
+    
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setStartAnimation(true);
+        }, 1000);
+    
+        return () => clearTimeout(timer);
+    }, []);
+    
     return (
         <div>
-            <section className="relative">
+            <section className="relative min-h-screen">
                 <Image
-                src="/images/image22.webp"
+                src="/images/imagen23.webp"
                 alt=""
                 priority
                 fill
                 className="object-cover mask-bottom-gradient -z-10"
                 />
-                <div className="relative z-10">
-                    <Header />
-                    <div className="pl-7 pb-18 pt-33 lg:pl-14 bg:pb-36 bg:pt-66 w-1/2">
+                <Header />
+                <motion.div
+                    initial={{ opacity: 0, y: 200 }}
+                    animate={startAnimation ? { opacity: 1, y: 0 } : { opacity: 0, y: 200 }}
+                    transition={{ duration: 2, ease: "easeOut" }}
+                    className="absolute top-1/2 left-2/5 transform -translate-x-1/2 -translate-y-1/2 z-10"
+                >
+                    <div className="w-3/4">
                         <Title 
                             title="¿Busca apartamento?"
                         />
@@ -30,7 +49,7 @@ export default function Search(){
                         </p>
                         <Button className="px-10">Contáctanos</Button>
                     </div>
-                </div>
+                </motion.div>
             </section>
             <Footer />
         </div>
