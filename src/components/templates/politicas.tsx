@@ -9,16 +9,16 @@ export default function Politica() {
         <div className="bg-white">
             <Header />
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 items-end justify-items-end -mt-28">
-                <div className="px-8 pt-8 lg:px-16 lg:pt-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2  justify-items-end">
+                <div className="px-8 lg:px-16 lg:pt-36">
                     <Title
                         title="Política de privacidad y manejo de datos personales"
                     />
-                    <p className="font-['Noto_Sans_Telugu'] text-[16px] text-[#4C4C4C] font-normal text-left leading-relaxed mt-4 whitespace-pre-line">
+                    <p className="font-['Noto_Sans_Telugu'] text-[16px] text-[#4C4C4C] font-normal text-left leading-relaxed whitespace-pre-line">
                         En esta política de privacidad, explicamos cómo y con qué finalidad procesamos sus datos personales y qué derechos tiene usted como sujeto de datos bajo el Reglamento General de Protección de Datos, normalmente abreviado como GDPR.{"\n"}
                         Fastighetshetsförvaltning i Väst AB (Västporten) protege su privacidad y es importante para nosotros que esté informado sobre cómo procesamos sus datos personales. Queremos que tenga la seguridad de que procesamos sus datos personales de forma segura y correcta. 
                     </p>
-                    <h2 className="font-['Noto_Sans_Telugu'] text-[20px] text-[#4C4C4C] font-bold text-left leading-relaxed mt-4 py-8">
+                    <h2 className="font-['Noto_Sans_Telugu'] text-[20px] text-[#4C4C4C] font-bold text-left leading-relaxed py-4">
                         Qué son los datos personales y qué significa el tratamiento de datos personales?
                     </h2>
                     <p className="font-['Noto_Sans_Telugu'] text-[16px] text-[#4C4C4C] font-normal text-left leading-relaxed whitespace-pre-line">
@@ -28,13 +28,13 @@ export default function Politica() {
                     </p>
                 </div>
                 
-                <div>
+                <div className="-mt-28">
                     <Image
                         src="/images/Rectangle-21.webp"
                         alt="Imagen de oficina"
                         width={692}
                         height={984}
-                        className="flex-shrink-0 mask-bottom-gradient z-0"
+                        className="w-auto h-full flex-shrink-0 mask-bottom-gradient z-0"
                     />
                 </div>
             </div>

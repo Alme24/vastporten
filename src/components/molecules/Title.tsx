@@ -7,7 +7,7 @@ export const Title = ({ title, description }: Props) => {
     return (
         <div className="text-left">
             <h1 
-                className="color-textoscuro" 
+                className="text-[#4C4C4C]" 
                 style={{ 
                     fontFamily: 'Noto Sans Telugu', 
                     fontSize: '48px', 
