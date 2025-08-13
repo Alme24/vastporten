@@ -5,8 +5,8 @@ import '/styles/fonts.css';
 
 export default function Footer() {
     return(
-        <footer className="w-full bg-white flex justify-center py-10">
-            <div className="flex justify-center items-center gap-8 max-w-4xl w-full px-4">
+        <footer className="w-full bg-white flex justify-center py-5">
+            <div className="flex justify-center items-center gap-8 max-w-4xl w-full px-4 py-5 border-t-1 border-t-gray-300">
                 <div className="flex flex-col gap-4">
                     <Button 
                         href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"

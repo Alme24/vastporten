@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Header({ transparent = false }: { transparent?: boolean }) {
     return (
         <header
-        className={`relative w-full h-[112px] flex justify-between px-4 py-4 ${
+        className={`relative w-full h-[112px] flex justify-between px-4 py-4 z-50 ${
             transparent ? "bg-transparent" : "bg-[linear-gradient(179.8deg,rgba(0,0,0,0.70)_8.36%,rgba(0,0,0,0)_96.63%)]"
         }`}
         >
