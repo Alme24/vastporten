@@ -23,7 +23,7 @@ export default function Header({ transparent = false }: { transparent?: boolean 
             items={[
                 { label: "Administración de propiedades", href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"},
                 { label: "Gestión técnica", href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"},
-                { label: "Gestión financiera", href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"},
+                { label: "Gestión financiera", href: "financialManagement"},
                 { label: "Otros servicios", href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"},
             ]}
             />
