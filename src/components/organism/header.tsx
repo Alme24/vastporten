@@ -33,7 +33,7 @@ export default function Header({ transparent = false }: { transparent?: boolean 
             <Button href="/politics" variant="btnHeader">
             Política de privacidad
             </Button>
-            <Button href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" variant="btnHeader">
+            <Button href="/whyChooseUs" variant="btnHeader">
             ¿Por qué Nosotros?
             </Button>
             <Button href="/contact" variant="btnHeader">

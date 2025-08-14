@@ -22,6 +22,7 @@ export default function Search(){
     return (
         <div>
             <section className="relative min-h-screen">
+                <Header />
                 <Image
                 src="/images/imagen23.webp"
                 alt=""
@@ -29,7 +30,6 @@ export default function Search(){
                 fill
                 className="object-cover mask-bottom-gradient -z-10"
                 />
-                <Header />
                 <motion.div
                     initial={{ opacity: 0, y: 200 }}
                     animate={startAnimation ? { opacity: 1, y: 0 } : { opacity: 0, y: 200 }}
@@ -40,14 +40,14 @@ export default function Search(){
                         <Title 
                             title="¿Busca apartamento?"
                         />
-                        <p className="font-['Noto_Sans_Telugu'] text-[16px] text-[#4C4C4C] font-normal text-left leading-relaxed mb-8 whitespace-pre-line">
+                        <p className="font-['Noto_Sans_Telugu'] text-[14px] text-[#4C4C4C] font-normal text-left leading-relaxed mb-8 whitespace-pre-line">
                             Envíenos un correo electrónico a <a href="mailto:info@vastporten.se" className="text-[#4E6D9A]">info@vastporten.se</a>, donde deberá describir su perfil y el tipo de apartamento que busca, así como el tamaño y el nivel de alquiler. Para ser admitido como inquilino, debe tener buen historial crediticio sin quejas de pago, ingresos estables y buenas referencias de antiguos propietarios. {"\n"}
                             {"\n"}
                             De acuerdo con las pautas del RGPD, NO incluya su número de seguro social en el correo electrónico, esto se solicitará en una etapa posterior.{"\n"}
                             {"\n"}
                             Si es necesaria una visita, nos pondremos en contacto con usted.
                         </p>
-                        <Button className="px-10">Contáctanos</Button>
+                        <Button>Contáctanos</Button>
                     </div>
                 </motion.div>
             </section>

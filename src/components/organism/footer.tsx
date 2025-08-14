@@ -14,7 +14,7 @@ export default function Footer() {
                         iconPosition="left"
                     >033-48 01 96</Button>
                     <Button
-                        href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+                        href="/contact"
                     >Contáctanos</Button>
                     <Button 
                         href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
