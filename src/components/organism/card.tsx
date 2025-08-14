@@ -22,12 +22,12 @@ export function Card({
             <Image
                 src={imageSrc}
                 alt={imageAlt}
-                className="w-full md:w-1/2 object-cover"
+                className="w-full md:w-1/2 grayscale-50"
                 width={500}
                 height={300}
             />
 
-            <div className="flex flex-col justify-center md:w-1/2 p-4">
+            <div className="flex flex-col justify-end md:w-1/2 p-4">
                 <div className="shadow-xl/20  rounded-xl w-[148px] h-[105px] flex justify-center items-center">
                     <label className="text-textoscuro text-[100px] font-family-noto-serif-telugu tracking-[0] leading-[100%] font-[800] text-center">{number}</label>
                 </div>
