@@ -9,8 +9,8 @@ import { motion } from "framer-motion";
 export default function Why(){
     return (
         <div>
-        <Header></Header>
-        <div className="bg-white h-28 pb-14"></div>
+            <Header></Header>
+            <div className="bg-white h-28 pb-14"></div>
             <div className="relative w-full h-[330px]">
                 <Image
                     src="/images/desk.webp"
@@ -34,7 +34,7 @@ export default function Why(){
             </div>
 
             <motion.p
-                className="font-['Noto_Sans_Telugu'] text-[#4C4C4C] leading-relaxed text-center text-[16px] font-normal py-18 max-w-2/3 mt-4 justify-items-center mx-auto"
+                className="font-['Noto_Sans_Telugu'] text-[#4C4C4C] leading-relaxed text-center text-[14px] font-normal py-18 max-w-2/3 mt-4 justify-items-center mx-auto"
                 initial={{ opacity: 0, x: "40vw" }} 
                 whileInView={{ opacity: 1, x: 0}}
                 viewport={{ once: false, amount: 0.5 }}
@@ -48,7 +48,7 @@ export default function Why(){
             </motion.p>
 
             <motion.div
-                className="grid grid-cols-[400px_auto] gap-x-10 p-8 items-center justify-items-center bg-[#F4F4F4] rounded-[8px] w-4/5 mx-auto"
+                className="grid grid-cols-[400px_auto] gap-x-10 p-8 items-center justify-items-center bg-[#F4F4F4] rounded-[8px] w-4/5 mx-auto shadow-lg"
                 initial={{ opacity: 0, y: "40vh" }}
                 whileInView={{ opacity: 1, y: 0}}
                 viewport={{ once: false, amount: 0 }}
@@ -62,7 +62,6 @@ export default function Why(){
                     alt=""
                     width={400}
                     height={424}
-                    className="rounded-t-lg"
                 />
                 <Subtitle description="También somos expertos en eficiencia energética y podemos ayudarle a ahorrar mucho dinero implementando medidas de eficiencia energética en su propiedad. Cada propuesta que desarrollamos es única para su propiedad y se adapta a cómo su propiedad tiene la mejor oportunidad de ahorrar energía. Finalmente, como mencioné, somos una empresa innovadora de administración de propiedades que ofrece a asociaciones de vivienda o propietarios una gestión simple y profesional. Queremos generar rentabilidad financiera y asegurarnos de optimizar y reducir los costos operativos en todas las propiedades con las que trabajamos. Nuestro principal objetivo es crear propiedades que funcionen bien y obtengan la máxima rentabilidad. La única manera de satisfacer a nuestros clientes es escucharlos y hacer lo que dicen. Por lo tanto, seremos receptivos y muy flexibles en cuanto a los servicios que el cliente solicita. Simplemente adaptamos el acuerdo a sus necesidades específicas."></Subtitle>
             </motion.div>
