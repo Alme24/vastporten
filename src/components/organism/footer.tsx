@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="flex justify-center items-center gap-8 max-w-4xl w-full px-4 py-5 border-t-1 border-t-gray-300">
                 <div className="flex flex-col gap-4">
                     <Button 
-                        href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+                        href="tel:033480196"
                         icon={<Image src="/images/phone_in_talk.svg" alt="Phone" width={28} height={28} />}
                         iconPosition="left"
                     >033-48 01 96</Button>
