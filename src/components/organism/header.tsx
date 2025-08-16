@@ -9,7 +9,7 @@ export default function Header({ transparent = false }: { transparent?: boolean 
 
     return (
         <header
-        className={`fixed w-full h-[112px] flex justify-between px-4 py-4 z-50 ${
+        className={`fixed w-full h-[112px] flex justify-between items-center px-4 py-4 z-50 ${
             transparent ? "bg-transparent" : "bg-[linear-gradient(179.8deg,rgba(0,0,0,0.70)_8.36%,rgba(0,0,0,0)_96.63%)]"
         }`}
         >
