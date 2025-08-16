@@ -18,6 +18,7 @@
   --font-family-noto-serif-telugu: 'Noto Serif Telugu', serif;
   --font-family-noto-telugu-semicondensed: 'Noto Sans Telugu SemiCondensed', sans-serif;
   --font-family-noto-telugu-condensed: 'Noto Sans Telugu Condensed', sans-serif;
+  --font-family-qwigley: 'Qwigley', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

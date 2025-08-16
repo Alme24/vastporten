@@ -47,7 +47,7 @@ export default function Search(){
                             {"\n"}
                             Si es necesaria una visita, nos pondremos en contacto con usted.
                         </p>
-                        <Button>Contáctanos</Button>
+                        <Button href="/contact">Contáctanos</Button>
                     </div>
                 </motion.div>
             </section>

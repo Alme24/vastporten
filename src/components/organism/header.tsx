@@ -2,6 +2,7 @@
 import DropDownMenu from "@/components/molecules/dropDownMenu";
 import Button from "@/components/molecules/boton";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header({ transparent = false }: { transparent?: boolean }) {
 
@@ -12,11 +13,14 @@ export default function Header({ transparent = false }: { transparent?: boolean 
             transparent ? "bg-transparent" : "bg-[linear-gradient(179.8deg,rgba(0,0,0,0.70)_8.36%,rgba(0,0,0,0)_96.63%)]"
         }`}
         >
-        <Image src="/images/vastporten 2.svg"
-            alt="Vastporten Logo"
-            width={140}
-            height={40}
-        />
+        <Link  href={"/page"}>
+            <Image src="/images/vastporten 2.svg"
+                alt="Vastporten Logo"
+                width={140}
+                height={40}
+                
+            />
+        </Link>
         <nav className="flex items-center gap-6">
             <DropDownMenu
             mainLabel="Servicio"
