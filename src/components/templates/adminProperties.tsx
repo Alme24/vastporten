@@ -30,7 +30,7 @@ export default function AdminProperties() {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.8 }}
       >
         <p>Con nosotros en Västporten, puede estar seguro de que tanto el ambiente interior como el exterior se mantienen acogedores y agradables y que todo funciona exactamente como debería.</p>
         <p>Si busca un administrador de propiedades con amplia experiencia y un esfuerzo eficaz que se esfuerce por ofrecer un mantenimiento de alta calidad, contáctenos. Ofrecemos a todos nuestros clientes una gestión y mantenimiento de propiedades a medida, adaptados a sus necesidades, para generar beneficios para el usuario, aumento del valor y rentabilidad para usted y su propiedad.</p>

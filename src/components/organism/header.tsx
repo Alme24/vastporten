@@ -25,8 +25,8 @@ export default function Header({ transparent = false }: { transparent?: boolean 
             <DropDownMenu
             mainLabel="Servicio"
             items={[
-                { label: "Administración de propiedades", href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"},
-                { label: "Gestión técnica", href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"},
+                { label: "Administración de propiedades", href: "adminProperties"},
+                { label: "Gestión técnica", href: "technicalManagement"},
                 { label: "Gestión financiera", href: "financialManagement"},
                 { label: "Otros servicios", href: "services"},
             ]}
