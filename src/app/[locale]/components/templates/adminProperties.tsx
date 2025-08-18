@@ -21,7 +21,7 @@ export default function AdminProperties() {
     <div className="flex flex-col items-center">
       <Header />
       <CanvaVideo
-        videoSrc='video/bg1.mp4'
+        videoSrc='/video/bg1.mp4'
         altText='video'
         title='Administración de propiedades en Borås'
       />

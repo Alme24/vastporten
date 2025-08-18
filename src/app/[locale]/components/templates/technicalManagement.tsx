@@ -12,7 +12,7 @@ export default function Technical(){
         <div>
         <Header />
         <CanvaVideo
-            videoSrc='video/bg3.mp4'
+            videoSrc='/video/bg3.mp4'
             altText='video'
             title='Gestión Técnica en Borås'
         />
@@ -56,7 +56,7 @@ export default function Technical(){
             </p>
             </motion.div>
         </div>
-        <div className="px-30 py-18 justify-items-center">
+        <div className="mt-20 w-3/4 justify-items-center mx-auto">
             <Title title="Servicios de gestión técnica"/>
             <div className="py-10">
             <Card

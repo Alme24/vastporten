@@ -13,7 +13,7 @@ export default  function Header({ transparent = false }: { transparent?: boolean
             transparent ? "bg-transparent" : "bg-[linear-gradient(179.8deg,rgba(0,0,0,0.70)_8.36%,rgba(0,0,0,0)_96.63%)]"
         }`}
         >
-        <Link  href={"/page"}>
+        <Link  href={"/"}>
             <Image src="/images/vastporten 2.svg"
                 alt="Vastporten Logo"
                 width={140}
@@ -25,7 +25,7 @@ export default  function Header({ transparent = false }: { transparent?: boolean
             <DropDownMenu
             mainLabel={t('servicio')}
             items={[
-                { label: t('label.administracion'), href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"},
+                { label: t('label.administracion'), href: "adminProperties"},
                 { label: t('label.tecnica'), href: "technicalManagement"},
                 { label: t('label.financiera'), href: "financialManagement"},
                 { label: t('label.otros'), href: "services"},

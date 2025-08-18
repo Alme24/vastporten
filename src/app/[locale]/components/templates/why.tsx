@@ -48,7 +48,7 @@ export default function Why(){
             </motion.p>
 
             <motion.div
-                className="grid grid-cols-[400px_auto] gap-x-10 p-8 items-center justify-items-center bg-[#F4F4F4] rounded-[8px] w-4/5 mx-auto shadow-lg"
+                className="grid grid-cols-[400px_auto] gap-x-10 p-8 mb-40 items-center justify-items-center bg-[#F4F4F4] rounded-[8px] w-4/5 mx-auto shadow-lg"
                 initial={{ opacity: 0, y: "40vh" }}
                 whileInView={{ opacity: 1, y: 0}}
                 viewport={{ once: false, amount: 0 }}

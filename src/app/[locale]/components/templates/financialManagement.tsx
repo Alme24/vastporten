@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from '@/components/organism/header'
-import CanvaVideo from '@/components/molecules/canvaVideo'
-import { Title } from '@/components/molecules/Title'
-import  Card  from '@/components/organism/card'
-import FinancialCards from '@/components/molecules/financialCards'
-import Footer from '@/components/organism/footer'
+import Header from '@/app/[locale]/components/organism/header'
+import CanvaVideo from '@/app/[locale]/components/molecules/canvaVideo'
+import { Title } from '@/app/[locale]/components/molecules/Title'
+import  Card  from '@/app/[locale]/components/organism/card'
+import FinancialCards from '@/app/[locale]/components/molecules/financialCards'
+import Footer from '@/app/[locale]/components/organism/footer'
 
 export default function FinancialManagement() {
   return (
@@ -12,7 +12,7 @@ export default function FinancialManagement() {
     <div className='flex flex-col items-center'>
       <Header />
       <CanvaVideo
-        videoSrc='video/bg2.mp4'
+        videoSrc='/video/bg2.mp4'
         altText='video'
         title='Gestión Financiera en Borås'
       />
