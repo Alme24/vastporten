@@ -9,7 +9,7 @@ interface CardProps {
     imagePosition?: "left" | "right";
 }
 
-export function Card({
+export default function Card({
     number,
     title,
     description,
