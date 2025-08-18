@@ -2,7 +2,7 @@
 import CanvaVideo from "@/app/[locale]/components/molecules/canvaVideo";
 import { motion } from "framer-motion";
 import { Title } from "@/app/[locale]/components/molecules/Title";
-import { Card } from "@/app/[locale]/components/organism/card";
+import Card  from "@/app/[locale]/components/organism/card";
 import Footer from "@/app/[locale]/components/organism/footer";
 import Image from "next/image";
 import Header from "@/app/[locale]/components/organism/header";
