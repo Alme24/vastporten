@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Header from "@/components/organism/header";
-import Footer from "@/components/organism/footer";
-import { Title } from "@/components/molecules/Title";
+import Header from "@/app/[locale]/components/organism/header";
+import Footer from "@/app/[locale]/components/organism/footer";
+import { Title } from "@/app/[locale]/components/molecules/Title";
 import '/styles/fonts.css'; 
 import { Subtitle } from "../molecules/subtitle";
 

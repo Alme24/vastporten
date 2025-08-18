@@ -1,4 +1,4 @@
-import Politica from "@/components/templates/politicas";
+import Politica from "@/app/[locale]/components/templates/politicas";
 
 export default function PoliticsPage() {
   return (

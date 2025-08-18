@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import Header from "@/components/organism/header";
-import Footer from "@/components/organism/footer";
-import { Title } from "@/components/molecules/Title";
-import Button from "@/components/molecules/boton";
+import Header from "@/app/[locale]/components/organism/header";
+import Footer from "@/app/[locale]/components/organism/footer";
+import { Title } from "@/app/[locale]/components/molecules/Title";
+import Button from "@/app/[locale]/components/molecules/boton";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 

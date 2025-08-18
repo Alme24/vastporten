@@ -1,12 +1,12 @@
 "use client";
-import Header from "@/components/organism/header";
-import Footer from "@/components/organism/footer";
-import CanvaAnimated from "@/components/molecules/canvaAnimated"
+import Header from "@/app/[locale]/components/organism/header";
+import Footer from "@/app/[locale]/components/organism/footer";
+import CanvaAnimated from "@/app/[locale]/components/molecules/canvaAnimated"
 import { motion } from "framer-motion";
-import { SubtitleHome } from "@/components/molecules/subtitle2";
-import { Card2 } from "@/components/organism/card2";
-import { Title } from "@/components/molecules/Title";
-import Button from "@/components/molecules/boton";
+import { SubtitleHome } from "@/app/[locale]/components/molecules/subtitle2";
+import { Card2 } from "@/app/[locale]/components/organism/card2";
+import { Title } from "@/app/[locale]/components/molecules/Title";
+import Button from "@/app/[locale]/components/molecules/boton";
 
 export default function Main(){
     return (
@@ -31,6 +31,8 @@ export default function Main(){
             <motion.img
             src={"/images/1.webp"}
             alt=""
+            className="w-full h-auto"
+            style={{ objectFit: "cover" }}
             initial={{opacity:0, y:"10vh"}}
             whileInView={{opacity:1, y:0}}
             viewport={{once:false, amount:0.5}}

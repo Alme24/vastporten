@@ -1,11 +1,11 @@
-
-import DropDownMenu from "@/components/molecules/dropDownMenu";
-import Button from "@/components/molecules/boton";
+"use client";
+import DropDownMenu from "@/app/[locale]/components/molecules/dropDownMenu";
+import Button from "@/app/[locale]/components/molecules/boton";
 import Image from "next/image";
 import Link from "next/link";
-
-export default function Header({ transparent = false }: { transparent?: boolean }) {
-
+import { useTranslations  } from "next-intl"
+export default  function Header({ transparent = false }: { transparent?: boolean }) {
+    const t =  useTranslations('Header');
 
     return (
         <header
@@ -23,12 +23,12 @@ export default function Header({ transparent = false }: { transparent?: boolean 
         </Link>
         <nav className="flex items-center gap-6">
             <DropDownMenu
-            mainLabel="Servicio"
+            mainLabel={t('servicio')}
             items={[
-                { label: "Administración de propiedades", href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"},
-                { label: "Gestión técnica", href: "technicalManagement"},
-                { label: "Gestión financiera", href: "financialManagement"},
-                { label: "Otros servicios", href: "services"},
+                { label: t('label.administracion'), href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"},
+                { label: t('label.tecnica'), href: "technicalManagement"},
+                { label: t('label.financiera'), href: "financialManagement"},
+                { label: t('label.otros'), href: "services"},
             ]}
             />
             <Button href="/search" variant="btnHeader">

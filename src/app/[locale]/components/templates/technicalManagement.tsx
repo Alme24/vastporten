@@ -1,11 +1,11 @@
 "use client";
-import CanvaVideo from "@/components/molecules/canvaVideo";
+import CanvaVideo from "@/app/[locale]/components/molecules/canvaVideo";
 import { motion } from "framer-motion";
-import { Title } from "@/components/molecules/Title";
-import { Card } from "@/components/organism/card";
-import Footer from "@/components/organism/footer";
+import { Title } from "@/app/[locale]/components/molecules/Title";
+import { Card } from "@/app/[locale]/components/organism/card";
+import Footer from "@/app/[locale]/components/organism/footer";
 import Image from "next/image";
-import Header from "@/components/organism/header";
+import Header from "@/app/[locale]/components/organism/header";
 
 export default function Technical(){
     return(

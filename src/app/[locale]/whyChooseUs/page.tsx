@@ -1,4 +1,4 @@
-import Why from "@/components/templates/why";
+import Why from "@/app/[locale]/components/templates/why";
 
 export default function WhyPage() {
     return(

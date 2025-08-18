@@ -1,7 +1,7 @@
 // components/molecules/DropdownMenu.tsx
 "use client";
 import { useState } from "react";
-import Button from "@/components/molecules/boton";
+import Button from "@/app/[locale]/components/molecules/boton";
 
 interface DropdownMenuProps {
     mainLabel: string;

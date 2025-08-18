@@ -1,4 +1,4 @@
-import OurServices from "@/components/templates/services";
+import OurServices from "@/app/[locale]/components/templates/services";
 
 export default function ServicesPage(){
     return(

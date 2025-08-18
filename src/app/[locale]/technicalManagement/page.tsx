@@ -1,4 +1,4 @@
-import Technical from "@/components/templates/technicalManagement";
+import Technical from "@/app/[locale]/components/templates/technicalManagement";
 
 export default function technicalPage(){
     return (

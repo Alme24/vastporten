@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "@/components/molecules/boton";
+import Button from "@/app/[locale]/components/molecules/boton";
 import Image from "next/image";
 import '/styles/fonts.css'; 
 
