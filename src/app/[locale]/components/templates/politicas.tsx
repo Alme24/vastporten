@@ -39,7 +39,7 @@ export default function Politica() {
             <div className="text-left w-full px-8 pt-1 lg:px-16 mb-40">
                 <Subtitle
                     subtitle= {t("subtitulo2")}
-                    description={t("descripcion2")}
+                    description={t("contenido2")}
                 ></Subtitle>
             
                 <div className="p-8 justify-items-center">
