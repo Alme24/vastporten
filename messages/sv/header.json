@@ -1,13 +1,13 @@
 {
-    "servicio": "Servicio",
-        "label": {
-            "administracion": "Administración de propiedades",
-            "tecnica": "Gestión técnica",
-            "financiera": "Gestión financiera",
-            "otros": "Otros servicios"
-        },
-    "buscar": "Buscar apartamento",
-    "politica": "Política de privacidad",
-    "porQueNosotros": "¿Por qué Nosotros?",
-    "contacto": "Contacto"
+    "servicio": "Tjänster",
+    "label": {
+        "administracion": "Fastighetsförvaltning",
+        "tecnica": "Teknisk förvaltning",
+        "financiera": "Finansiell förvaltning",
+        "otros": "Övriga tjänster"
+    },
+    "buscar": "Sök lägenhet",
+    "politica": "Integritetspolicy",
+    "porQueNosotros": "Varför vi?",
+    "contacto": "Kontakt"
 }

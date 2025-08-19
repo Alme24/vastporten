@@ -12,13 +12,13 @@ export default function FinancialManagement() {
   const t = useTranslations('financialManagement')
 
   return (
-    <>
+    <div>
+      <Header />
       <div className='flex flex-col items-center'>
-        <Header />
         <CanvaVideo
           videoSrc='/video/bg2.mp4'
           altText='video'
-          title='Gestión Financiera en Borås'
+          title={t("titulo")}
         />
         <motion.div className='w-1/2 text-center font-family-noto-telugu text-textoscuro font-[400] text-[16px] my-60'
           initial={{ opacity: 0, y: 200 }}
@@ -26,8 +26,7 @@ export default function FinancialManagement() {
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.9 }}
         >
-          <p>Si necesita ayuda con la contabilidad, en Västporten estamos listos para encargarnos de ello. Con asesoramiento experto, le guiaremos en la dirección correcta en la negociación de préstamos, el cálculo de proyectos y demás planificación financiera actual.</p>
-          <p>Sabemos cómo gestionar las finanzas de forma eficiente e inteligente para que puedas dedicar tiempo y dinero a otras cosas. Con nosotros como tu gestor, siempre te sentirás seguro y tendrás acceso a ayuda personalizada cuando la necesites.</p>
+          <p className='whitespace-pre-line'>{t("descripcion")}</p>
         </motion.div>
         <FinancialCards />
 
@@ -90,8 +89,8 @@ export default function FinancialManagement() {
         <div className='w-49/100 text-center font-family-noto-telugu text-textoscuro font-[400] text-[16px] mt-4 mb-40'>
         <p className='whitespace-pre-line'>{t('descripcion2')}</p>
       </div>
+      </div>
+      <Footer />
     </div>
-    <Footer />
-    </>
   )
 }

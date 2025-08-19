@@ -1,31 +1,31 @@
 {
-    "titulo": "Gestión Financiera en Borås",
-    "descripcion": "Si necesita ayuda con la contabilidad, en Västporten estamos listos para encargarnos de ello. Con asesoramiento experto, le guiaremos en la dirección correcta en la negociación de préstamos, el cálculo de proyectos y demás planificación financiera actual.\nSabemos cómo gestionar las finanzas de forma eficiente e inteligente para que puedas dedicar tiempo y dinero a otras cosas. Con nosotros como tu gestor, siempre te sentirás seguro y tendrás acceso a ayuda personalizada cuando la necesites.",
-    "subtitulo": "Servicios de Gestión Financiera",
-    "card1":{
-        "titulo": "Contabilidad",
-        "descripcion": "Si desea disponer de más tiempo para otras tareas, permítanos gestionar sus tareas contables, incluyendo la contabilización, el archivo y la contabilidad continua. También podemos gestionar cobros, facturas de clientes, desembolsos, recordatorios de pago, facturas de proveedores y la gestión de casos de ejecución de deudas."
+    "titulo": "Finansiell förvaltning i Borås",
+    "descripcion": "Om du behöver hjälp med bokföring är vi på Västporten redo att ta hand om det. Med expertvägledning leder vi dig rätt vid låneförhandlingar, projektberäkningar och annan aktuell ekonomisk planering.\nVi vet hur man hanterar ekonomin effektivt och smart så att du kan lägga tid och pengar på annat. Med oss som din förvaltare känner du dig alltid trygg och har tillgång till personlig hjälp när du behöver det.",
+    "subtitulo": "Tjänster inom finansiell förvaltning",
+    "card1": {
+        "titulo": "Bokföring",
+        "descripcion": "Om du vill frigöra tid för andra uppgifter, låt oss sköta din bokföring, inklusive bokföring, arkivering och löpande redovisning. Vi kan även hantera inkassering, kundfakturor, utbetalningar, betalningspåminnelser, leverantörsfakturor och hantering av ärenden hos Kronofogden."
     },
-    "card2":{
-        "titulo": "Cuentas anuales",
-        "descripcion": "Si es necesario, en Västporten estaremos encantados de elaborar un estado financiero completo para que usted pueda presentarlo a su contador."
+    "card2": {
+        "titulo": "Årsredovisning",
+        "descripcion": "Vid behov hjälper vi på Västporten gärna till att upprätta en komplett årsredovisning som du kan lämna till din revisor."
     },
-    "card3":{
-        "titulo":"Lista de miembros/apartamentos y notificación",
-        "descripcion":"Si lo solicita, podemos encargarnos de sus registros de membresía, apartamento y propiedad, así como de todos los envíos de correo necesarios. Si también está cansado de enviar notificaciones, nos encargaremos de enviarlas y de hacer el seguimiento de las cuotas de membresía, etc."
+    "card3": {
+        "titulo": "Medlems-/lägenhetsregister och avisering",
+        "descripcion": "Om du önskar kan vi ta hand om dina medlems-, lägenhets- och fastighetsregister samt alla nödvändiga utskick. Om du också är trött på att skicka aviseringar, tar vi hand om det och följer upp medlemsavgifter m.m."
     },
-    "card4":{
-        "titulo": "Informes Financieros",
-        "descripcion": "Entréguenos la base de sus informes financieros y elaboraremos para usted informes mensuales, trimestrales y anuales, tanto de balance, flujo de caja como de resultados"
+    "card4": {
+        "titulo": "Ekonomiska rapporter",
+        "descripcion": "Lämna underlaget för dina ekonomiska rapporter till oss så upprättar vi månads-, kvartals- och årsrapporter för dig, både balans-, kassaflödes- och resultatrapporter."
     },
-    "card5":{
-        "titulo":"Contabilidad y tramitación de tasas e impuestos",
-        "descripcion":"Declaración del IVA, impuesto de sociedades y valoración de inmuebles, así como declaraciones de la renta y de la empresa. Le ayudamos con todo lo necesario y nos aseguramos de que todas las cifras sean correctas."
+    "card5": {
+        "titulo": "Redovisning och hantering av avgifter och skatter",
+        "descripcion": "Momsdeklaration, bolagsskatt och fastighetsvärdering samt inkomst- och företagsdeklarationer. Vi hjälper dig med allt som behövs och ser till att alla siffror är korrekta."
     },
-    "card6":{
-        "titulo": "Contacto con las autoridades",
-        "descripcion": "Podemos representarle ante consultas de la Agencia Tributaria y otras autoridades competentes en materia financiera. También puede solicitar nuestra ayuda si necesita apoyo para gestionar sus estadísticas."
+    "card6": {
+        "titulo": "Kontakt med myndigheter",
+        "descripcion": "Vi kan representera dig vid frågor till Skatteverket och andra relevanta myndigheter inom ekonomi. Du kan även be oss om hjälp om du behöver stöd med att hantera din statistik."
     },
-    "subtitulo2": "Seguro y fácil",
-    "descripcion2": "Västporten ofrece soluciones integrales para propietarios y adapta la gestión para brindarle la ayuda que necesita. Por supuesto, no dude en contactarnos si tiene alguna pregunta financiera o necesita asesoramiento y apoyo legal o sobre sus finanzas inmobiliarias.\nAl contratarnos para la gestión financiera, le quedará tiempo y dinero para otras cosas"
+    "subtitulo2": "Tryggt och enkelt",
+    "descripcion2": "Västporten erbjuder helhetslösningar för fastighetsägare och anpassar förvaltningen för att ge dig den hjälp du behöver. Tveka självklart inte att kontakta oss om du har några ekonomiska frågor eller behöver rådgivning och juridiskt stöd kring din fastighetsekonomi.\nNär du anlitar oss för ekonomisk förvaltning får du tid och pengar över till annat."
 }

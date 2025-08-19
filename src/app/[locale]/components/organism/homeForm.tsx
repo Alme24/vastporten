@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
-
+import { useTranslations } from "next-intl";
 export default function HomeForm() {
+    const t = useTranslations("homeForm");
     const [form, setForm] = useState({
         nombre: "",
         telefono: "",
@@ -26,32 +27,32 @@ export default function HomeForm() {
                 const regexNombre = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
 
                 if (!value || (value as string).trim().length < 3) {
-                    error = "El nombre debe tener al menos 3 caracteres.";
+                    error = t("error.nombreCaracteres");
                 } else if (!regexNombre.test(value as string)) {
-                    error = "El nombre solo puede contener letras y espacios.";
+                    error = t("error.nombreContenido");
                 }
                 break;
 
             case "telefono":
                 if (!/^\d{7,15}$/.test(value as string)) {
-                    error = "El teléfono debe tener entre 7 y 15 dígitos.";
+                    error = t("error.telefonoDigitos");
                 }
                 break;
             case "email":
                 if (
                     !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value as string)
                 ) {
-                    error = "Ingrese un correo electrónico válido.";
+                    error = t("error.emailValido");
                 }
                 break;
             case "mensaje":
                 if (!value || (value as string).trim().length < 10) {
-                    error = "El mensaje debe tener al menos 10 caracteres.";
+                    error = t("error.mensajeCaracteres");
                 }
                 break;
             case "privacy":
                 if (!value) {
-                    error = "Debe aceptar la política de privacidad.";
+                    error = t("error.privacyAccept");
                 }
                 break;
         }
@@ -82,7 +83,7 @@ export default function HomeForm() {
     return (
         <div className="flex flex-col justify-center items-center bg-base-de-botoones h-[578px] w-[760px] rounded-xl p-14">
             <h2 className="font-family-noto-telugu font-[600] text-5xl text-center text-textoscuro">
-                Contáctanos
+                {t("contactanos")}
             </h2>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full m-4">
                 <div className="flex flex-col">
@@ -91,7 +92,7 @@ export default function HomeForm() {
                         name="nombre"
                         value={form.nombre}
                         onChange={handleChange}
-                        placeholder="Nombre*"
+                        placeholder={t("placeholder.nombre")}
                         className="h-10 font-family-noto-telugu text-[16px] font-[500] custom-input"
                     />
                     {errors.nombre && <span className="text-red-500 text-sm">{errors.nombre}</span>}
@@ -104,7 +105,7 @@ export default function HomeForm() {
                             name="telefono"
                             value={form.telefono}
                             onChange={handleChange}
-                            placeholder="Teléfono*"
+                            placeholder={t("placeholder.telefono")}
                             className="h-10 font-family-noto-telugu text-[16px] font-[500] custom-input"
                         />
                         {errors.telefono && <span className="text-red-500 text-sm">{errors.telefono}</span>}
@@ -115,7 +116,7 @@ export default function HomeForm() {
                             name="email"
                             value={form.email}
                             onChange={handleChange}
-                            placeholder="Correo electrónico*"
+                            placeholder={t("placeholder.email")}
                             className="h-10 font-family-noto-telugu text-[16px] font-[500] custom-input"
                         />
                         {errors.email && <span className="text-red-500 text-sm">{errors.email}</span>}
@@ -127,7 +128,7 @@ export default function HomeForm() {
                         name="mensaje"
                         value={form.mensaje}
                         onChange={handleChange}
-                        placeholder="Mensaje*"
+                        placeholder={t("placeholder.mensaje")}
                         className="font-family-noto-telugu p-4 text-[16px] font-[500] custom-input resize-none h-31"
                     />
                     {errors.mensaje && <span className="text-red-500 text-sm">{errors.mensaje}</span>}
@@ -145,8 +146,7 @@ export default function HomeForm() {
                         htmlFor="privacy"
                         className="text-4 font-family-noto-telugu text-textoscuro"
                     >
-                        Al realizar su solicitud de contacto, usted acepta que compartiremos
-                        los datos personales que ha elegido.
+                        {t("descripcion")}
                     </label>
                 </div>
                 {errors.privacy && <span className="text-red-500 text-sm">{errors.privacy}</span>}
@@ -156,7 +156,7 @@ export default function HomeForm() {
                         type="submit"
                         className="h-13 w-71 bg-[#E1EAEF] font-family-noto-telugu text-textoscuro font-[700] rounded-lg shadow-lg"
                     >
-                        Enviar
+                        {t("enviar")}
                     </button>
                 </div>
             </form>

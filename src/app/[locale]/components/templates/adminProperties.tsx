@@ -45,7 +45,7 @@ export default function AdminProperties() {
           number='01'
           title={t("card1.titulo")}
           description={t("card1.descripcion")}
-          imageSrc='/images/cards/gestionFinanciera1.jpg'
+          imageSrc='/images/cards/admProp1.jpg'
           imageAlt='alter'
           imagePosition='left'
         />
@@ -53,7 +53,7 @@ export default function AdminProperties() {
           number='02'
           title={t("card2.titulo")}
           description={t("card2.descripcion")}
-          imageSrc='/images/cards/gestionFinanciera2.jpg'
+          imageSrc='/images/cards/admProp2.jpg'
           imageAlt='alter'
           imagePosition='right'
         />
@@ -61,7 +61,7 @@ export default function AdminProperties() {
           number='03'
           title={t("card3.titulo")}
           description={t("card3.descripcion")}
-          imageSrc='/images/cards/gestionFinanciera3.jpg'
+          imageSrc='/images/cards/admProp3.jpg'
           imageAlt='alter'
           imagePosition='left'
         />
@@ -69,7 +69,7 @@ export default function AdminProperties() {
           number='04'
           title={t("card4.titulo")}
           description={t("card4.descripcion")}
-          imageSrc='/images/cards/gestionFinanciera4.jpg'
+          imageSrc='/images/cards/admProp4.jpg'
           imageAlt='alter'
           imagePosition='right'
         />
@@ -77,7 +77,7 @@ export default function AdminProperties() {
           number='05'
           title={t("card5.titulo")}
           description={t("card5.descripcion")}
-          imageSrc='/images/cards/gestionFinanciera5.jpg'
+          imageSrc='/images/cards/admProp5.jpg'
           imageAlt='alter'
           imagePosition='left'
         />
@@ -85,7 +85,7 @@ export default function AdminProperties() {
           number='06'
           title={t("card6.titulo")}
           description={t("card6.descripcion")}
-          imageSrc='/images/cards/gestionFinanciera6.jpg'
+          imageSrc='/images/cards/admProp6.jpg'
           imageAlt='alter'
           imagePosition='right'
         />
@@ -94,7 +94,7 @@ export default function AdminProperties() {
           number='07'
           title={t("card7.titulo")}
           description={t("card7.descripcion")}
-          imageSrc='/images/cards/gestionFinanciera6.jpg'
+          imageSrc='/images/cards/admProp7.jpg'
           imageAlt='alter'
           imagePosition='left'
         />

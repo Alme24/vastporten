@@ -1,8 +1,19 @@
 {
-    "nombrePlaceholder": "Nombre *",
-    "telefonoPlaceholder": "Teléfono *",
-    "emailPlaceholder": "Correo electrónico *",
-    "mensajePlaceholder": "Mensaje *",
-    "descripcion": "Al realizar su solicitud de contacto, usted acepta que compartiremos los datos personales que ha elegido.",
-    "enviar": "Enviar"
+    "contactanos": "Kontakta oss",
+    "placeholder": {
+        "nombre": "Namn *",
+        "telefono": "Telefon *",
+        "email": "E-post *",
+        "mensaje": "Meddelande *"
+    },
+    "descripcion": "När du skickar din kontaktförfrågan godkänner du att vi delar de personuppgifter du har valt.",
+    "enviar": "Skicka",
+    "error": {
+        "nombreCaracteres": "Namnet måste innehålla minst 3 tecken.",
+        "nombreContenido": "Namnet får endast innehålla bokstäver och mellanslag.",
+        "telefonoDigitos": "Telefonnumret måste innehålla mellan 7 och 15 siffror.",
+        "emailValido": "Ange en giltig e-postadress.",
+        "mensajeCaracteres": "Meddelandet måste innehålla minst 10 tecken.",
+        "privacyAccept": "Du måste acceptera integritetspolicyn."
+    }
 }

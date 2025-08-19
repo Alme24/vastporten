@@ -1,8 +1,19 @@
 {
-    "nombrePlaceholder": "Nombre *",
-    "telefonoPlaceholder": "Teléfono *",
-    "emailPlaceholder": "Correo electrónico *",
-    "mensajePlaceholder": "Mensaje *",
+    "contactanos": "Contáctanos",
+    "placeholder":{
+        "nombre": "Nombre *",
+        "telefono": "Teléfono *",
+        "email": "Correo electrónico *",
+        "mensaje": "Mensaje *"
+    },
     "descripcion": "Al realizar su solicitud de contacto, usted acepta que compartiremos los datos personales que ha elegido.",
-    "enviar": "Enviar"
+    "enviar": "Enviar",
+    "error":{
+        "nombreCaracteres": "El nombre debe tener al menos 3 caracteres.",
+        "nombreContenido": "El nombre solo puede contener letras y espacios.",
+        "telefonoDigitos": "El teléfono debe tener entre 7 y 15 dígitos.",
+        "emailValido": "Ingrese un correo electrónico válido.",
+        "mensajeCaracteres": "El mensaje debe tener al menos 10 caracteres.",
+        "privacyAccept": "Debe aceptar la política de privacidad."
+    }
 }

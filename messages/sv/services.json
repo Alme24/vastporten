@@ -1,24 +1,24 @@
 {
-    "titulo":"NUESTROS SERVICIOS",
-    "descripcion": "Le ofrecemos soluciones integrales como propietario, donde nos responsabilizamos totalmente de sus propiedades. Estosignifica que podemos encargarnos de todo, o de algunas partes, según sus necesidades.",
-    "lista":{
-        "titulo": "Algunos de los servicios que ofrecemos",
-        "1":"Supervisión general, mantenimiento y patrullaje.",
-        "2": "Gestión de alquileres y cobro de alquileres.",
-        "3": "Mantenimiento de propiedades, interiores y exteriores.",
-        "4": "Limpieza.",
-        "5": "Gestión técnica.",
-        "6": "Gestión financiera.",
-        "7": "Informe de errores.",
-        "8": "Reparaciones y mantenimiento.",
-        "9": "Alquiler de apartamentos a clientes.",
-        "10": "Control de nieve y hielo.",
-        "11": "Recogida de grava/grava.",
-        "12": "Limpieza de ventanas.",
-        "13": "Inspecciones.",
-        "14": "Monitorizar los acuerdos con proveedores y servicios del cliente.",
-        "15": "Servicio de guardia."
+    "titulo": "VÅRA TJÄNSTER",
+    "descripcion": "Vi erbjuder helhetslösningar för dig som fastighetsägare, där vi tar fullt ansvar för dina fastigheter. Det innebär att vi kan ta hand om allt, eller utvalda delar, beroende på dina behov.",
+    "lista": {
+        "titulo": "Några av de tjänster vi erbjuder",
+        "1": "Allmän tillsyn, underhåll och rondering.",
+        "2": "Hyresadministration och hyresinkassering.",
+        "3": "Underhåll av fastigheter, både inomhus och utomhus.",
+        "4": "Städning.",
+        "5": "Teknisk förvaltning.",
+        "6": "Finansiell förvaltning.",
+        "7": "Felrapportering.",
+        "8": "Reparationer och underhåll.",
+        "9": "Uthyrning av lägenheter till kunder.",
+        "10": "Snö- och halkbekämpning.",
+        "11": "Uppsamlning av grus.",
+        "12": "Fönsterputsning.",
+        "13": "Besiktningar.",
+        "14": "Övervakning av avtal med leverantörer och kundtjänster.",
+        "15": "Jourservice."
     },
-    "subtitulo":"Otros servicios",
-    "descripcion2":"Como propietario, también puede optar por que nos encarguemos únicamente de ciertas partes de la gestión técnica. Adaptamos la gestión a las necesidades de su empresa o propiedad. Independientemente de la solución que elija, trabajamos con control para alcanzar los objetivos que usted y nosotros, como propietario, hemos establecido conjuntamente en cuanto a valorización, beneficios para el usuario y rentabilidad.\nVästporten es una empresa fundada por dos jóvenes cansados de lo anticuada y obsoleta que es la administración de propiedades actual. Por ello, queremos modernizar, optimizar y facilitar la vida a nuestros propietarios en cualquier situación. Johan y Daniel han desarrollado una amplia red de contactos a lo largo de los años y cuentan con una amplia experiencia en administración y gestión de propiedades, lo que nos permite trabajar de forma eficiente y económica. Además, contamos con un enfoque holístico que resulta sumamente valioso en el trabajo con propiedades."
+    "subtitulo": "Övriga tjänster",
+    "descripcion2": "Som fastighetsägare kan du även välja att vi endast tar hand om vissa delar av den tekniska förvaltningen. Vi anpassar förvaltningen efter ditt företags eller din fastighets behov. Oavsett vilken lösning du väljer arbetar vi målinriktat för att nå de mål som du och vi som fastighetsägare har satt upp tillsammans när det gäller värdeökning, användarnytta och lönsamhet.\nVästporten är ett företag grundat av två unga personer som tröttnat på hur föråldrad och omodern fastighetsförvaltningen är idag. Därför vill vi modernisera, optimera och göra livet enklare för våra fastighetsägare i alla situationer. Johan och Daniel har under åren byggt upp ett brett kontaktnät och har stor erfarenhet av fastighetsförvaltning och administration, vilket gör att vi kan arbeta effektivt och ekonomiskt. Dessutom har vi ett helhetsperspektiv som är mycket värdefullt i arbetet med fastigheter."
 }

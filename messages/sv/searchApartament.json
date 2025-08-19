@@ -1,5 +1,5 @@
 {
-    "titulo":"¿Busca apartamento?",
-    "descripcion": "Envíenos un correo electrónico a <a>info@vastporten.se</a>, donde deberá describir su perfil y el tipo de apartamento que busca, así como el tamaño y el nivel de alquiler. Para ser admitido como inquilino, debe tener buen historial crediticio sin quejas de pago, ingresos estables y buenas referencias de antiguos propietarios.\n\nDe acuerdo con las pautas del RGPD, NO incluya su número de seguro social en el correo electrónico, esto se solicitará en una etapa posterior.\n\nSi es necesaria una visita, nos pondremos en contacto con usted.",
-    "contactanos":"Contáctanos"
+    "titulo": "Söker du lägenhet?",
+    "descripcion": "Skicka ett e-postmeddelande till <a>info@vastporten.se</a> där du beskriver din profil och vilken typ av lägenhet du söker, samt storlek och hyresnivå. För att bli godkänd som hyresgäst behöver du ha god kreditvärdighet utan betalningsanmärkningar, stabil inkomst och goda referenser från tidigare hyresvärdar.\n\nEnligt GDPR-riktlinjerna ska du INTE inkludera ditt personnummer i e-postmeddelandet, detta begärs i ett senare skede.\n\nOm en visning är nödvändig kommer vi att kontakta dig.",
+    "contactanos": "Kontakta oss"
 }
