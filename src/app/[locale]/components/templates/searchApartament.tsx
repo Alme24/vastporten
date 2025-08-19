@@ -33,7 +33,7 @@ export default function Search(){
                 <motion.div
                     initial={{ opacity: 0, y: 200 }}
                     animate={startAnimation ? { opacity: 1, y: 0 } : { opacity: 0, y: 200 }}
-                    transition={{ duration: 1.5, ease: "easeOut" }}
+                    transition={{ duration: 1, ease: "easeOut" }}
                     className="absolute top-1/2 left-2/5 transform -translate-x-1/2 -translate-y-1/2 z-10"
                 >
                     <div className="w-3/4">

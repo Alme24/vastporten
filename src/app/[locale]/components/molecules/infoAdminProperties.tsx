@@ -6,7 +6,6 @@ import Image from "next/image";
 export default function InfoAdminProperties() {
   return (
     <section className="w-3/4 mx-auto px-4 py-12 flex flex-col md:flex-row gap-8 font-family-noto-telugu">
-      {/* Columna izquierda: Imagen grande */}
       <motion.div 
         className="relative w-full md:w-[40%] flex-shrink-0"
         initial={{ opacity: 0, x: -150 }}

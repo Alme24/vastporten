@@ -20,9 +20,9 @@ export default function Technical(){
             className="font-family-noto-telugu text-normal text-center text-textoscuro w-3/4 mx-auto py-40"
             initial= {{opacity:0, y:"20vh"}}
             whileInView={{opacity:1, y:0}}
-            viewport={{once:false, amount:0}}
+            viewport={{once:true, amount:0.5}}
             transition={{
-            duration:2,
+            duration:1,
             ease:"easeIn"
             }}
         >
@@ -40,14 +40,14 @@ export default function Technical(){
             className="absolute top-8 left-12 bg-white rounded-[8px] text-center font-family-noto-telugu gap-4 px-8 py-14 w-5/12 shadow-inner text-textoscuro"
             initial={{opacity:0, x:"-20vw"}}
             whileInView={{opacity:1, x:0}}
-            viewport={{once: false, amount:0.2}}
+            viewport={{once: true, amount:0.5}}
             transition={{
-                duration: 3,
+                duration: 1,
                 ease: "easeOut"
             }}
             >
             <h2 className="text-[20px] font-bold">Adaptado a tus necesidades</h2>
-            <p className="text-[14px] font-normal">
+            <p className="text-[16px] mt-3">
                 En Västporten ofrecemos soluciones integrales a todos aquellos propietarios que quieran evitarse parte de la gestión administrativa o poder prescindir de 
                 ella por completo.
                 Todas nuestras colaboraciones comienzan con un diálogo cercano con usted, donde tendrá la oportunidad de describir con más detalle en qué necesita ayuda, como junta directiva o propietario. Con base en sus deseos, le presentamos una propuesta para una solución permanente que se ajuste a sus necesidades y le brinde los mayores beneficios financieros. Por supuesto, también podemos ayudarle a comparar otros proveedores para garantizar que las medidas y ofertas se adapten 
