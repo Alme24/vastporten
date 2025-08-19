@@ -18,9 +18,9 @@ export default function Main(){
             className="pt-40 justify-items-center"
             initial={{opacity:0, x:"10vw"}}
             whileInView={{opacity:1, x:0}}
-            viewport={{once:false, amount:0}}
+            viewport={{once:true, amount:0.8}}
             transition={{
-                duration:3,
+                duration:1.5,
                 ease:"easeOut"
             }}
             >
@@ -36,20 +36,20 @@ export default function Main(){
             style={{ objectFit: "cover" }}
             initial={{opacity:0, y:"10vh"}}
             whileInView={{opacity:1, y:0}}
-            viewport={{once:false, amount:0.5}}
+            viewport={{once:true, amount:0.5}}
             transition={{
-                duration:3,
+                duration:1.2,
                 ease:"easeOut"
             }}
             />
 
             <motion.div
-            className="justify-items-center"
+            className="justify-items-center w-3/5 mx-auto"
             initial={{opacity:0, y:"10vh"}}
             whileInView={{opacity:1, y:0.5}}
-            viewport={{once:false, amount:0}}
+            viewport={{once:true, amount:0}}
             transition={{
-                duration:2,
+                duration:1,
                 ease:"easeOut"
             }}
             >
@@ -59,13 +59,13 @@ export default function Main(){
             />
             </motion.div>
 
-            <div className="grid grid-cols-3 pt-19 pb-14 justify-items-center w-full">
+            <div className="grid grid-cols-3 pt-19 pb-14 justify-items-center w-3/4 mx-auto">
             <motion.div
                 initial={{opacity:0, x:"-10vw"}}
                 whileInView={{opacity: 1, x:0}}
-                viewport={{once:false, amount:0.5}}
+                viewport={{once:true, amount:0.5}}
                 transition={{
-                duration:2,
+                duration:1,
                 ease:"easeOut"
                 }}
             >
@@ -77,11 +77,11 @@ export default function Main(){
                 />
             </motion.div>
             <motion.div
-                initial={{opacity:0, y:"10vh"}}
+                initial={{opacity:0, y:"15vh"}}
                 whileInView={{opacity: 1, y:0}}
-                viewport={{once:false, amount:0.5}}
+                viewport={{once:true, amount:0.1}}
                 transition={{
-                duration:3,
+                duration:1,
                 ease:"easeOut"
                 }}
             >
@@ -95,9 +95,9 @@ export default function Main(){
             <motion.div
                 initial={{opacity:0, x:"10vw"}}
                 whileInView={{opacity: 1, x:0}}
-                viewport={{once:false, amount:0.5}}
+                viewport={{once:true, amount:0.5}}
                 transition={{
-                duration:3,
+                duration:1,
                 ease:"easeOut"
                 }}
             >
@@ -115,9 +115,9 @@ export default function Main(){
                 className="col-span-2 justify-end"
                 initial={{opacity:0, x:"-10vw"}}
                 whileInView={{opacity: 1, x:0}}
-                viewport={{once:false, amount:0.5}}
+                viewport={{once:true, amount:0.5}}
                 transition={{
-                duration:3,
+                duration:1.5,
                 ease:"easeOut"
                 }}
             >
@@ -137,9 +137,9 @@ export default function Main(){
                 className="h-full w-full rounded-[8px]"
                 initial={{opacity:0, x:"10vw"}}
                 whileInView={{opacity: 1, x:0}}
-                viewport={{once:false, amount:0.5}}
+                viewport={{once:true, amount:0.5}}
                 transition={{
-                duration:3,
+                duration:1.5,
                 ease:"easeOut"
                 }}        
             ></motion.img>

@@ -25,7 +25,7 @@ export default function Why(){
                 initial={{ x: "-100vw" }} 
                 animate={{ x: 0 }} 
                 transition={{
-                    duration: 3,
+                    duration: 1,
                     ease: "easeOut",
                 }}
                 >
@@ -35,12 +35,12 @@ export default function Why(){
             </div>
 
             <motion.p
-                className="font-['Noto_Sans_Telugu'] text-[#4C4C4C] leading-relaxed text-center text-[14px] font-normal py-18 max-w-2/3 mt-4 justify-items-center mx-auto"
+                className="font-['Noto_Sans_Telugu'] text-[#4C4C4C] leading-relaxed text-center text-[16px] font-normal  max-w-2/3 my-50 justify-items-center mx-auto"
                 initial={{ opacity: 0, x: "40vw" }} 
                 whileInView={{ opacity: 1, x: 0}}
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{
-                duration: 3,
+                duration: 1.3 ,
                 ease: "easeOut",
                 }}
             >{t("contenido")}</motion.p>
@@ -49,9 +49,9 @@ export default function Why(){
                 className="grid grid-cols-[400px_auto] gap-x-10 p-8 mb-40 items-center justify-items-center bg-[#F4F4F4] rounded-[8px] w-4/5 mx-auto shadow-lg"
                 initial={{ opacity: 0, y: "40vh" }}
                 whileInView={{ opacity: 1, y: 0}}
-                viewport={{ once: false, amount: 0 }}
+                viewport={{ once: true, amount: 0 }}
                 transition={{
-                    duration: 2,
+                    duration: 1,
                     ease: "easeOut",
                 }}
             >

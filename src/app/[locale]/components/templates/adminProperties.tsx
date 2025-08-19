@@ -40,7 +40,7 @@ export default function AdminProperties() {
       <div className="w-3/4 m-auto">
         <h1 className=" text-5xl text-textoscuro font-[600] text-center my-10">{t('subtitulo')}</h1>
       </div>
-      <section className='w-3/4 my-10'>
+      <section className='w-3/4 mt-10 mb-40'>
         <Card
           number='01'
           title={t("card1.titulo")}

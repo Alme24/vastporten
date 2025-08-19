@@ -1,9 +1,14 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function FinancialCards() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 gap-4 w-3/4 mx-auto">
-      <div className="relative h-[400px] md:h-[500px]">
+      <motion.div className="relative h-[400px] md:h-[500px]"
+        initial={{ opacity: 0, x: -150 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.8 }}>
         <Image
           src="/images/cards/finCard1.jpg"
           alt="Interior de cocina"
@@ -24,10 +29,14 @@ export default function FinancialCards() {
             </p>
           </div>
         </div>
-      </div>
-      <div className="relative h-[400px] md:h-[500px]">
+      </motion.div>
+      <motion.div className="relative h-[400px] md:h-[500px]"
+        initial={{ opacity: 0, x: 150 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.8 }}>
         <Image
-          src="/images/cards/finCard2.jpg" 
+          src="/images/cards/finCard2.jpg"
           alt="Interior con escaleras"
           fill
           className="object-cover"
@@ -48,7 +57,7 @@ export default function FinancialCards() {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

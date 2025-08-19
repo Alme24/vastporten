@@ -21,9 +21,9 @@ export default function Technical(){
             className="font-family-noto-telugu text-normal text-center text-textoscuro w-3/4 mx-auto py-40"
             initial= {{opacity:0, y:"20vh"}}
             whileInView={{opacity:1, y:0}}
-            viewport={{once:false, amount:0}}
+            viewport={{once:true, amount:0.5}}
             transition={{
-            duration:2,
+            duration:1,
             ease:"easeIn"
             }}
         >{t("descripcion")}</motion.p>
@@ -38,14 +38,14 @@ export default function Technical(){
             className="absolute top-8 left-12 bg-white rounded-[8px] text-center font-family-noto-telugu gap-4 px-8 py-14 w-5/12 shadow-inner text-textoscuro"
             initial={{opacity:0, x:"-20vw"}}
             whileInView={{opacity:1, x:0}}
-            viewport={{once: false, amount:0.2}}
+            viewport={{once: true, amount:0.5}}
             transition={{
-                duration: 3,
+                duration: 1,
                 ease: "easeOut"
             }}
             >
             <h2 className="text-[20px] font-bold">{t("subtitulo")}</h2>
-            <p className="text-[14px] font-normal">{t("descripcion2")}</p>
+            <p className="text-[16px] mt-3">{t("descripcion2")}</p>
             </motion.div>
         </div>
         <div className="mt-20 w-3/4 justify-items-center mx-auto">

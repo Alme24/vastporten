@@ -12,7 +12,7 @@ export default function Politica() {
         <div className="bg-white">
             <Header />
             
-            <div className="grid grid-cols-1 lg:grid-cols-2  justify-items-end">
+            <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-end">
                 <div className="px-8 lg:px-16 lg:pt-36">
                     <Title
                         title={t("titulo")}
@@ -36,7 +36,7 @@ export default function Politica() {
                     />
                 </div>
             </div>
-            <div className="text-left w-full px-8 pt-1 lg:px-16">
+            <div className="text-left w-full px-8 pt-1 lg:px-16 mb-40">
                 <Subtitle
                     subtitle= {t("subtitulo2")}
                     description={t("descripcion2")}

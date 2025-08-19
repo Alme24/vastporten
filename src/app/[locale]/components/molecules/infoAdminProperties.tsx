@@ -7,7 +7,6 @@ export default function InfoAdminProperties() {
   const t = useTranslations("infoAdminProperties");
   return (
     <section className="w-3/4 mx-auto px-4 py-12 flex flex-col md:flex-row gap-8 font-family-noto-telugu">
-      {/* Columna izquierda: Imagen grande */}
       <motion.div 
         className="relative w-full md:w-[40%] flex-shrink-0"
         initial={{ opacity: 0, x: -150 }}
@@ -25,9 +24,7 @@ export default function InfoAdminProperties() {
         </div>
       </motion.div>
 
-      {/* Columna derecha */}
       <div className="flex flex-col justify-between w-full md:w-[60%] gap-6">
-        {/* Texto superior */}
         <div>
           <motion.h2
             className="text-3xl md:text-5xl font-bold text-textoscuro leading-snug mb-4"
@@ -55,7 +52,6 @@ export default function InfoAdminProperties() {
           </motion.div>
         </div>
 
-        {/* Imágenes pequeñas al fondo */}
         <motion.div
           className="grid grid-cols-3 gap-4 mt-6"
           initial={{ opacity: 0, x: 150 }}
