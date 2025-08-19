@@ -2,8 +2,9 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-
+import { useTranslations } from "next-intl";
 export default function InfoAdminProperties() {
+  const t = useTranslations("infoAdminProperties");
   return (
     <section className="w-3/4 mx-auto px-4 py-12 flex flex-col md:flex-row gap-8 font-family-noto-telugu">
       {/* Columna izquierda: Imagen grande */}
@@ -35,7 +36,7 @@ export default function InfoAdminProperties() {
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.5 }}
           >
-            ¿Cómo ofrecemos una gestión de propiedades de calidad?
+            {t("titulo1")}
           </motion.h2>
 
           <motion.div
@@ -46,23 +47,10 @@ export default function InfoAdminProperties() {
             viewport={{ once: true, amount: 0.5 }}
           >
             <p>
-              En Västsporten, nos esforzamos por mantenernos modernos e
-              innovadores para brindarle, como propietario, las herramientas
-              necesarias para simplificar aún más su día a día. Llámenos en
-              cuanto tenga alguna pregunta relacionada con su propiedad y le
-              ayudaremos a resolverla.
+              {t("descripcion1")}
             </p>
             <p>
-              En la fase inicial de la colaboración, siempre realizamos una
-              revisión exhaustiva de su propiedad y registramos hasta el más
-              mínimo detalle del mantenimiento que debemos tener en cuenta. A
-              continuación, presentamos nuestras sugerencias sobre las
-              necesidades y la mejor manera de realizarlas. Usted elige entre
-              soluciones integrales, donde asumimos toda la responsabilidad, o
-              dejarnos encargarnos de partes seleccionadas. Sea cual sea la
-              solución que elija, le guiaremos a usted y a su propiedad hacia
-              sus objetivos, donde le esperan beneficios para el usuario,
-              aumento del valor y rentabilidad.
+              {t("descripcion2")}
             </p>
           </motion.div>
         </div>

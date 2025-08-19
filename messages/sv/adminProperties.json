@@ -1,0 +1,33 @@
+{
+    "titulo": "Administración de propiedades en Borås",
+    "descripcion": "Con nosotros en Västporten, puede estar seguro de que tanto el ambiente interior como el exterior se mantienen acogedores y agradables y que todo funciona exactamente como debería.\nSi busca un administrador de propiedades con amplia experiencia y un esfuerzo eficaz que se esfuerce por ofrecer un mantenimiento de alta calidad, contáctenos. Ofrecemos a todos nuestros clientes una gestión y mantenimiento de propiedades a medida, adaptados a sus necesidades, para generar beneficios para el usuario, aumento del valor y rentabilidad para usted y su propiedad.",
+    "subtitulo": "Servicios de administración de propiedades de Västporten",
+    "card1":{
+        "titulo": "Inspección de la propiedad",
+        "descripcion": "Al contratarnos para la administración de su propiedad, puede estar seguro de que revisaremos su propiedad regularmente para garantizar que todo se mantenga en buen estado. Si surge algún problema, nos desplazamos rápidamente al lugar y le brindamos la asistencia que necesita."
+    },
+    "card2":{
+        "titulo": "Limpieza",
+        "descripcion": "Unas escaleras limpias y un entorno ordenado son acogedores y mejoran la impresión positiva de su propiedad. Estaremos encantados de ayudarle. También nos aseguramos de que las ventanas se mantengan limpias y que las lavanderías y otras áreas comunes se mantengan en óptimas condiciones."
+    },
+    "card3":{
+        "titulo":"Jardinería",
+        "descripcion":"En lo que respecta al césped y los parterres de su propiedad, puede confiar en nosotros. Nos aseguramos de que el césped se mantenga uniforme y bonito, y de que no crezcan malas hierbas en los parterres. Según las necesidades y la temporada, también podemos podar los árboles de la propiedad, cortar los setos y recoger las hojas que caen en otoño."
+    },
+    "card4":{
+        "titulo": "Retirada de nieve y protección antideslizante",
+        "descripcion": "El invierno trae muchas preocupaciones para los propietarios, pero nosotros lo hacemos más llevadero al encargarnos de la mayor parte de la tarea de retirar la nieve y las medidas antideslizantes. Nos aseguramos de que las entradas y los pasillos, así como los estacionamientos y las entradas de vehículos adyacentes a la propiedad, se mantengan libres de nieve y paleamos los techos para eliminar el riesgo de derrumbe. También lijamos las superficies de paso para que sean antideslizantes y, con la llegada de la primavera, volvemos para limpiar y retirar la arena."
+    },
+    "card5":{
+        "titulo":"Servicios y pequeños trabajos de carpintería",
+        "descripcion":"Cuando la asociación busca ayuda con algún trabajo menor de carpintería, estamos aquí para ayudarle y, por supuesto, también estaremos encantados de intervenir si algún residente necesita ayuda con tareas más sencillas."
+    },
+    "card6":{
+        "titulo": "Informes de emergencia y averías",
+        "descripcion": "La mayoría de las cosas ocurren cuando menos te lo esperas, pero en Västporten siempre estamos cerca para garantizar que recibas rápidamente la ayuda y el servicio adecuados cuando los necesites. Ofrecemos un servicio de atención al cliente completo para reportar errores las 24 horas, los 7 días de la semana, y respondemos con rapidez para resolver tus problemas."
+    },
+    "card7":{
+        "titulo": "Movimiento de tierras",
+        "descripcion": "Si desea mejorar el entorno local, por ejemplo, creando una zona de barbacoa u otro punto de encuentro para los residentes, podemos ayudarle. Para trabajos que no podamos realizar nosotros mismos, contamos con una amplia red de subcontratistas para ayudarle."
+    }
+}

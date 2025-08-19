@@ -1,0 +1,24 @@
+{
+    "titulo":"NUESTROS SERVICIOS",
+    "descripcion": "Le ofrecemos soluciones integrales como propietario, donde nos responsabilizamos totalmente de sus propiedades. Estosignifica que podemos encargarnos de todo, o de algunas partes, según sus necesidades.",
+    "lista":{
+        "titulo": "Algunos de los servicios que ofrecemos",
+        "1":"Supervisión general, mantenimiento y patrullaje.",
+        "2": "Gestión de alquileres y cobro de alquileres.",
+        "3": "Mantenimiento de propiedades, interiores y exteriores.",
+        "4": "Limpieza.",
+        "5": "Gestión técnica.",
+        "6": "Gestión financiera.",
+        "7": "Informe de errores.",
+        "8": "Reparaciones y mantenimiento.",
+        "9": "Alquiler de apartamentos a clientes.",
+        "10": "Control de nieve y hielo.",
+        "11": "Recogida de grava/grava.",
+        "12": "Limpieza de ventanas.",
+        "13": "Inspecciones.",
+        "14": "Monitorizar los acuerdos con proveedores y servicios del cliente.",
+        "15": "Servicio de guardia."
+    },
+    "subtitulo":"Otros servicios",
+    "descripcion2":"Como propietario, también puede optar por que nos encarguemos únicamente de ciertas partes de la gestión técnica. Adaptamos la gestión a las necesidades de su empresa o propiedad. Independientemente de la solución que elija, trabajamos con control para alcanzar los objetivos que usted y nosotros, como propietario, hemos establecido conjuntamente en cuanto a valorización, beneficios para el usuario y rentabilidad.\nVästporten es una empresa fundada por dos jóvenes cansados de lo anticuada y obsoleta que es la administración de propiedades actual. Por ello, queremos modernizar, optimizar y facilitar la vida a nuestros propietarios en cualquier situación. Johan y Daniel han desarrollado una amplia red de contactos a lo largo de los años y cuentan con una amplia experiencia en administración y gestión de propiedades, lo que nos permite trabajar de forma eficiente y económica. Además, contamos con un enfoque holístico que resulta sumamente valioso en el trabajo con propiedades."
+}

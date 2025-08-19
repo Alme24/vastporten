@@ -1,0 +1,21 @@
+{
+    "subtitulo": "Una empresa de gestión local que se preocupa",
+    "descripcion": "Västporten realiza una gestión inmobiliaria integral que incluye la gestión técnica, la gestión financiera y el mantenimiento.Nuestra visión es ofrecer una gestión inmobiliaria de primera clase, adaptada a las necesidades y expectativas de nuestros clientes. Nos consideramos una empresa local, fiable, altamente competente y moderna. Cada cliente se sentirá único gracias a nuestro trato personalizado.",
+    "subtitulo2": "Nuestros servicios",
+    "descripcion2": "Ofrecemos soluciones integrales para usted, como asociación de propietarios o propietario, donde asumimos la responsabilidad total de sus propiedades. Esto significa que podemos encargarnos de todo, o de algunas partes, según sus necesidades como propietario.",
+    "card1":{
+        "titulo": "Gestión financiera",
+        "descripcion": "Si necesita ayuda con la contabilidad, en Västporten estamos listos para encargarnos de ello."
+    },
+    "card2":{
+        "titulo": "Administración de propiedades",
+        "descripcion": "Con Nosotros puede estar seguro que todo funciona como debería."
+    },
+    "card3": {
+        "titulo": "Gestión técnica",
+        "descripcion": "A través de nuestra gestión técnica, recibirá asistencia con todo lo relacionado con la administración de la propiedad y el apoyo de la junta directiva."
+    },
+    "busca":"Busca apartamento",
+    "emailText": "Envíenos un correo electrónico a <a>info@vastporten.se</a>, donde deberá describir su perfil y el tipo de apartamento que busca, así como el tamaño y el nivel de alquiler. Para ser admitido como inquilino, debe tener buen historial crediticio sin quejas de pago, ingresos estables y buenas referencias de antiguos propietarios.\nDe acuerdo con las pautas del RGPD, NO incluya su número de seguro social en el correo electrónico, esto se solicitará en una etapa posterior.\nSi es necesario una vista, nos pondremos en contacto con usted.",
+    "contactanos": "Contáctanos"
+}

@@ -7,8 +7,9 @@ import { SubtitleHome } from "@/app/[locale]/components/molecules/subtitle2";
 import { Card2 } from "@/app/[locale]/components/organism/card2";
 import { Title } from "@/app/[locale]/components/molecules/Title";
 import Button from "@/app/[locale]/components/molecules/boton";
-
+import { useTranslations } from "next-intl";
 export default function Main(){
+    const t = useTranslations("main");
     return (
         <div>
             <Header />
@@ -24,8 +25,8 @@ export default function Main(){
             }}
             >
             <SubtitleHome
-                subtitle="Una empresa de gestión local que se preocupa"
-                description="Västporten realiza una gestión inmobiliaria integral que incluye la gestión técnica, la gestión financiera y el mantenimiento.Nuestra visión es ofrecer una gestión inmobiliaria de primera clase, adaptada a las necesidades y expectativas de nuestros clientes. Nos consideramos una empresa local, fiable, altamente competente y moderna. Cada cliente se sentirá único gracias a nuestro trato personalizado."
+                subtitle={t("subtitulo")}
+                description={t("descripcion")}
             />
             </motion.div>
             <motion.img
@@ -53,8 +54,8 @@ export default function Main(){
             }}
             >
             <SubtitleHome
-                subtitle="Nuestros servicios"
-                description="Ofrecemos soluciones integrales para usted, como asociación de propietarios o propietario, donde asumimos la responsabilidad total de sus propiedades. Esto significa que podemos encargarnos de todo, o de algunas partes, según sus necesidades como propietario."
+                subtitle={t("subtitulo2")}
+                description={t("descripcion2")}
             />
             </motion.div>
 
@@ -68,9 +69,9 @@ export default function Main(){
                 ease:"easeOut"
                 }}
             >
-                <Card2 
-                title="Gestión financiera"
-                description="Si necesita ayuda con la contabilidad, en Västporten estamos listos para encargarnos de ello."
+                <Card2
+                title={t("card1.titulo")}
+                description={t("card1.descripcion")}
                 imageSrc="/images/cardsHome/iluong-01.svg"
                 imageAlt="gestion financiera"
                 />
@@ -85,8 +86,8 @@ export default function Main(){
                 }}
             >
                 <Card2
-                title="Administración de propiedades"
-                description="Con Nosotros puede estar seguro que todo funciona como deberia."
+                title={t("card2.titulo")}
+                description={t("card2.descripcion")}
                 imageSrc="/images/cardsHome/iluong-02.svg"
                 imageAlt="adminitracion de propiedades"
                 />
@@ -101,8 +102,8 @@ export default function Main(){
                 }}
             >
                 <Card2
-                title="Gestión Técnica"
-                description="A través de nuestra gestión técnica, recibirá asistencia con todo lo relacionado con la administración de la propiedad y el apoyo de la junta directiva."
+                title={t("card3.titulo")}
+                description={t("card3.descripcion")}
                 imageSrc="/images/cardsHome/iluong-03.svg"
                 imageAlt="Gestion tecnica"
                 />
@@ -120,13 +121,13 @@ export default function Main(){
                 ease:"easeOut"
                 }}
             >
-                <Title title="Busca apartamento"/>
+                <Title title={t("busca")} />
                 <p className="font-['Noto_Sans_Telugu'] text-[16px] text-[#4C4C4C] font-normal text-left leading-relaxed whitespace-pre-line pb-10">
-                Envíenos un correo electrónico a <a href="mailto:info@vastporten.se" className="text-[#4E6D9A]">info@vastporten.se</a> , donde deberá describir su perfil y el tipo de apartamento que busca, así como el tamaño y el nivel de alquiler. Para ser admitido como inquilino, debe tener buen historial crediticio sin quejas de pago, ingresos estables y buenas referencias de antiguos propietarios.
-                De acuerdo con las pautas del RGPD, NO incluya su número de seguro social en el correo electrónico, esto se solicitará en una etapa posterior.
-                Si es necesario una vista, nos pondremos en contacto con usted.
+                    {t.rich('emailText', {
+                        a: (chunks) => <a href="mailto:info@vastporten.se" className="text-[#4E6D9A]">{chunks}</a>,
+                    })}
                 </p>
-                <div className="w-2/5"><Button href="/contact">Contáctanos</Button></div>
+                <div className="w-2/5"><Button href="/contact">{t("contactanos")}</Button></div>
             </motion.div>
             <motion.img
                 src={"/images/living.webp"}

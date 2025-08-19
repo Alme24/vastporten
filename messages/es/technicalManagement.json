@@ -1,0 +1,31 @@
+{
+    "tituloVideo": "Gestión Técnica en Borås",
+    "descripcion": "A través de nuestra gestión técnica, recibirá asistencia con todo lo relacionado con la administración de la propiedad y el apoyo de la junta directiva. Le ayudamos a mantener la comodidad y la seguridad, así como todas las funciones previstas de la propiedad. Junto con usted, también podemos prolongar la vida útil de la propiedad y garantizar que se eviten o minimicen daños de diversos tipos.Con nosotros, cada cliente es único y nuestro objetivo es que todos reciban una gestión técnica de primera clase, adaptada a sus expectativas y necesidades. Nuestro enfoque holístico es valioso y único, y nos permite ofrecerle exactamente la solución que busca, justo cuando la necesita.",
+    "subtitulo": "Adaptado a tus necesidades",
+    "descripcion2": "En Västporten ofrecemos soluciones integrales a todos aquellos propietarios que quieran evitarse parte de la gestión administrativa o poder prescindir de ella por completo. Todas nuestras colaboraciones comienzan con un diálogo cercano con usted, donde tendrá la oportunidad de describir con más detalle en qué necesita ayuda, como junta directiva o propietario. Con base en sus deseos, le presentamos una propuesta para una solución permanente que se ajuste a sus necesidades y le brinde los mayores beneficios financieros. Por supuesto, también podemos ayudarle a comparar otros proveedores para garantizar que las medidas y ofertas se adapten óptimamente a su propiedad.Para su seguridad, trabajamos siempre con total transparencia y puede seguir nuestro trabajo en curso y participar en los documentos y otros materiales cuando lo desee. También le ofreceremos un seguimiento continuo. Si necesita ajustar el trabajo, nuestro acuerdo o está considerando trabajos adicionales, simplemente contacte a uno de nuestros gerentes y lo organizaremos.",
+    "titulo1": "Servicios de gestión técnica",
+    "card1":{
+        "titulo": "Planificación del mantenimiento",
+        "descripcion":  "Le ayudamos a desarrollar y revisar planes de mantenimiento que incluyen presupuestos personalizados para la gestiónfinanciera. Mediante una gestión de proyectos y adquisiciones rentables, también garantizamos que pueda cumplir con el de mantenimiento."
+    },
+    "card2":{
+        "titulo": "Mantenimiento",
+        "descripcion": "Gestionamos proyectos y garantizamos la calidad de sus contratos secundarios más importantes, así como también de los trabajos de mantenimiento planificados futuros."
+    },
+    "card3":{
+        "titulo": "Mejoras de la propiedad",
+        "descripcion": "¿Desea mejorar su propiedad de alguna manera? En Västporten le ayudamos a investigar y realizar análisis de necesidades para la optimización operativa y energética, así como para un desarrollo inmobiliario adecuado."
+    },
+    "card4":{
+        "titulo": "Apoyo de la junta",
+        "descripcion": "Entréguenos la base de sus informes financieros y elaboraremos para usted informes mensuales, trimestrales y anuales, tanto de balance, flujo de caja como de resultados."
+    },
+    "card5": {
+        "titulo":"Contactos de autoridad",
+        "descripcion": "¿Le resulta difícil y complicado, como a muchos otros, contactar con compañías de seguros, autoridades y municipios? En Västporten, podemos ayudarle. Por supuesto, también puede contactarnos para obtener asesoramiento o resolver sus dudas sobre el contacto."
+    },
+    "card6":{
+        "titulo": "Informes de emergencia y averías",
+        "descripcion": "En Västporten, valoramos el contacto personal con cada cliente y nos mantenemos siempre disponibles para que pueda obtener servicio y respuestas rápidamente cuando lo necesite. Ofrecemos un servicio completo de atención al cliente para la notificación de averías y el servicio de guardia. Si desea realizar un seguimiento de los informes de averías, tiene acceso completo a estadísticas y otros documentos."
+    }
+}

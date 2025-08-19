@@ -5,8 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslations  } from "next-intl"
 export default  function Header({ transparent = false }: { transparent?: boolean }) {
-    const t =  useTranslations('Header');
-
+    const t =  useTranslations('header');
     return (
         <header
         className={`fixed w-full h-[112px] flex justify-between items-center px-4 py-4 z-50 ${
@@ -32,16 +31,16 @@ export default  function Header({ transparent = false }: { transparent?: boolean
             ]}
             />
             <Button href="/search" variant="btnHeader">
-            Buscar apartamento
+            {t('buscar')}
             </Button>
             <Button href="/politics" variant="btnHeader">
-            Política de privacidad
+            {t('politica')}
             </Button>
             <Button href="/whyChooseUs" variant="btnHeader">
-            ¿Por qué Nosotros?
+            {t('porQueNosotros')}
             </Button>
             <Button href="/contact" variant="btnHeader">
-            Contacto
+            {t('contacto')}
             </Button>
             <Button 
                 href="tel:033480196"

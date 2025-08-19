@@ -6,11 +6,12 @@ import { Title } from "@/app/[locale]/components/molecules/Title";
 import Button from "@/app/[locale]/components/molecules/boton";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-
+import { useTranslations } from "next-intl";
 
 export default function Search(){
     const [startAnimation, setStartAnimation] = useState(false);
-    
+    const t = useTranslations("searchApartament");
+
     useEffect(() => {
         const timer = setTimeout(() => {
             setStartAnimation(true);
@@ -38,16 +39,14 @@ export default function Search(){
                 >
                     <div className="w-3/4">
                         <Title 
-                            title="¿Busca apartamento?"
+                            title={t("titulo")}
                         />
                         <p className="font-['Noto_Sans_Telugu'] text-[14px] text-[#4C4C4C] font-normal text-left leading-relaxed mb-8 whitespace-pre-line">
-                            Envíenos un correo electrónico a <a href="mailto:info@vastporten.se" className="text-[#4E6D9A]">info@vastporten.se</a>, donde deberá describir su perfil y el tipo de apartamento que busca, así como el tamaño y el nivel de alquiler. Para ser admitido como inquilino, debe tener buen historial crediticio sin quejas de pago, ingresos estables y buenas referencias de antiguos propietarios. {"\n"}
-                            {"\n"}
-                            De acuerdo con las pautas del RGPD, NO incluya su número de seguro social en el correo electrónico, esto se solicitará en una etapa posterior.{"\n"}
-                            {"\n"}
-                            Si es necesaria una visita, nos pondremos en contacto con usted.
+                            {t.rich('descripcion', {
+                                a: (chunks) => <a href="mailto:info@vastporten.se" className="text-[#4E6D9A]">{chunks}</a>,
+                            })}
                         </p>
-                        <Button href="/contact">Contáctanos</Button>
+                        <Button href="/contact">{t("contactanos")}</Button>
                     </div>
                 </motion.div>
             </section>

@@ -1,0 +1,8 @@
+{
+    "nombrePlaceholder": "Nombre *",
+    "telefonoPlaceholder": "Teléfono *",
+    "emailPlaceholder": "Correo electrónico *",
+    "mensajePlaceholder": "Mensaje *",
+    "descripcion": "Al realizar su solicitud de contacto, usted acepta que compartiremos los datos personales que ha elegido.",
+    "enviar": "Enviar"
+}

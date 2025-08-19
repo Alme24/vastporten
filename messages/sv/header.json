@@ -1,0 +1,13 @@
+{
+    "servicio": "Servicio",
+        "label": {
+            "administracion": "Administración de propiedades",
+            "tecnica": "Gestión técnica",
+            "financiera": "Gestión financiera",
+            "otros": "Otros servicios"
+        },
+    "buscar": "Buscar apartamento",
+    "politica": "Política de privacidad",
+    "porQueNosotros": "¿Por qué Nosotros?",
+    "contacto": "Contacto"
+}
