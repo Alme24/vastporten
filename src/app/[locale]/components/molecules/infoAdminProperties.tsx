@@ -24,9 +24,7 @@ export default function InfoAdminProperties() {
         </div>
       </motion.div>
 
-      {/* Columna derecha */}
       <div className="flex flex-col justify-between w-full md:w-[60%] gap-6">
-        {/* Texto superior */}
         <div>
           <motion.h2
             className="text-3xl md:text-5xl font-bold text-textoscuro leading-snug mb-4"
@@ -67,7 +65,6 @@ export default function InfoAdminProperties() {
           </motion.div>
         </div>
 
-        {/* Imágenes pequeñas al fondo */}
         <motion.div
           className="grid grid-cols-3 gap-4 mt-6"
           initial={{ opacity: 0, x: 150 }}

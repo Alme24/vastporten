@@ -10,7 +10,7 @@ export default function Politica() {
         <div className="bg-white">
             <Header />
             
-            <div className="grid grid-cols-1 lg:grid-cols-2  justify-items-end">
+            <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-end">
                 <div className="px-8 lg:px-16 lg:pt-36">
                     <Title
                         title="Política de privacidad y manejo de datos personales"
@@ -36,7 +36,7 @@ export default function Politica() {
                     />
                 </div>
             </div>
-            <div className="text-left w-full px-8 pt-1 lg:px-16">
+            <div className="text-left w-full px-8 pt-1 lg:px-16 mb-40">
                 <Subtitle
                     subtitle= "¿Quién es responsable de los datos personales que tratamos?"
                     description={`Fastighetsförvaltning i Väst AB (Västporten) es el responsable del tratamiento de datos descritas en esta Política de Privacidad. Es quien determina los fines y medios del tratamiento.

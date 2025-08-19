@@ -24,7 +24,7 @@ export default function OurServices (){
                 whileInView={{opacity:1, y:0}}
                 viewport={{once:false, amount:0}}
                 transition={{
-                    duration:3,
+                    duration:1.5,
                     ease: "easeOut"
                 }}
             >
@@ -38,7 +38,7 @@ export default function OurServices (){
               whileInView={{opacity:1, y:0}}
               viewport={{once:false, amount:0}}
               transition={{
-                  duration:2,
+                  duration:1.5,
                   ease: "easeOut"
               }}
           >
@@ -52,7 +52,7 @@ export default function OurServices (){
               whileInView={{opacity:1, x: 0 }} 
               viewport={{once:false, amount:0.1}}
               transition={{
-                  duration: 3,
+                  duration: 2,
                   ease: "easeOut",
               }}
           >
@@ -82,7 +82,7 @@ export default function OurServices (){
               whileInView={{ opacity:1,x: 0 }} 
               viewport={{once:false, amount:0.1}}
               transition={{
-                  duration: 3,
+                  duration: 2,
                   ease: "easeOut",
               }}
           >

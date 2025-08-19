@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Contact(){
     return (
         <div>
-            <section className="relative">
+            <section className="relative mb-40">
                 <Image
                 src="/images/contact.webp"
                 alt=""

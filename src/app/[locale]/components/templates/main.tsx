@@ -43,7 +43,7 @@ export default function Main(){
             />
 
             <motion.div
-            className="justify-items-center"
+            className="justify-items-center w-3/5 mx-auto"
             initial={{opacity:0, y:"10vh"}}
             whileInView={{opacity:1, y:0.5}}
             viewport={{once:false, amount:0}}
@@ -58,7 +58,7 @@ export default function Main(){
             />
             </motion.div>
 
-            <div className="grid grid-cols-3 pt-19 pb-14 justify-items-center w-full">
+            <div className="grid grid-cols-3 pt-19 pb-14 justify-items-center w-3/4 mx-auto">
             <motion.div
                 initial={{opacity:0, x:"-10vw"}}
                 whileInView={{opacity: 1, x:0}}
@@ -76,11 +76,11 @@ export default function Main(){
                 />
             </motion.div>
             <motion.div
-                initial={{opacity:0, y:"10vh"}}
+                initial={{opacity:0, y:"15vh"}}
                 whileInView={{opacity: 1, y:0}}
                 viewport={{once:false, amount:0.5}}
                 transition={{
-                duration:3,
+                duration:2,
                 ease:"easeOut"
                 }}
             >
@@ -96,7 +96,7 @@ export default function Main(){
                 whileInView={{opacity: 1, x:0}}
                 viewport={{once:false, amount:0.5}}
                 transition={{
-                duration:3,
+                duration:2,
                 ease:"easeOut"
                 }}
             >

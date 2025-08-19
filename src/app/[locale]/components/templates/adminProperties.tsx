@@ -39,60 +39,60 @@ export default function AdminProperties() {
       <div className="w-3/4 m-auto">
         <h1 className=" text-5xl text-textoscuro font-[600] text-center my-10">Servicios de administración de propiedades de Västporten</h1>
       </div>
-      <section className='w-3/4 my-10'>
+      <section className='w-3/4 mt-10 mb-40'>
         <Card
           number='01'
-          title='Contabilidad'
-          description='Si desea disponer de más tiempo para otras tareas, permítanos gestionar sus tareas contables, incluyendo la contabilización, el archivo y la contabilidad continua. También podemos gestionar cobros, facturas de clientes, desembolsos, recordatorios de pago, facturas de proveedores y la gestión de casos de ejecución de deudas.'
-          imageSrc='/images/cards/gestionFinanciera1.jpg'
+          title='Inspección de la propiedad'
+          description='Al contratarnos para la administración de su propiedad, puede estar seguro de que revisaremos su propiedad regularmente para garantizar que todo se mantenga en buen estado. Si surge algún problema, nos desplazamos rápidamente al lugar y le brindamos la asistencia que necesita.'
+          imageSrc='/images/cards/admProp1.webp'
           imageAlt='alter'
           imagePosition='left'
         />
         <Card
           number='02'
-          title='Cuentas anuales'
-          description='Si es necesario, en Västporten estaremos encantados de elaborar un estado financiero completo para que usted pueda presentarlo a su contador.'
-          imageSrc='/images/cards/gestionFinanciera2.jpg'
+          title='Limpieza'
+          description='Unas escaleras limpias y un entorno ordenado son acogedores y mejoran la impresión positiva de su propiedad. Estaremos encantados de ayudarle. También nos aseguramos de que las ventanas se mantengan limpias y que las lavanderías y otras áreas comunes se mantengan en óptimas condiciones.'
+          imageSrc='/images/cards/admProp2.webp'
           imageAlt='alter'
           imagePosition='right'
         />
         <Card
           number='03'
-          title='Lista de miembros/apartamentos y notificación'
-          description='Si lo solicita, podemos encargarnos de sus registros de membresía, apartamento y propiedad, así como de todos los envíos de correo necesarios. Si también está cansado de enviar notificaciones, nos encargaremos de enviarlas y de hacer el seguimiento de las cuotas de membresía, etc.'
-          imageSrc='/images/cards/gestionFinanciera3.jpg'
+          title='Jardinería'
+          description='En lo que respecta al césped y los parterres de su propiedad, puede confiar en nosotros. Nos aseguramos de que el césped se mantenga uniforme y bonito, y de que no crezcan malas hierbas en los parterres. Según las necesidades y la temporada, también podemos podar los árboles de la propiedad, cortar los setos y recoger las hojas que caen en otoño.'
+          imageSrc='/images/cards/admProp3.webp'
           imageAlt='alter'
           imagePosition='left'
         />
         <Card
           number='04'
-          title='Informes financieros'
-          description='Entréguenos la base de sus informes financieros y elaboraremos para usted informes mensuales, trimestrales y anuales, tanto de balance, flujo de caja como de resultados'
-          imageSrc='/images/cards/gestionFinanciera4.jpg'
+          title='Retirada de nieve y protección antideslizante'
+          description='El invierno trae muchas preocupaciones para los propietarios, pero nosotros lo hacemos más llevadero al encargarnos de la mayor parte de la tarea de retirar la nieve y las medidas antideslizantes. Nos aseguramos de que las entradas y los pasillos, así como los estacionamientos y las entradas de vehículos adyacentes a la propiedad, se mantengan libres de nieve y paleamos los techos para eliminar el riesgo de derrumbe. También lijamos las superficies de paso para que sean antideslizantes y, con la llegada de la primavera, volvemos para limpiar y retirar la arena.'
+          imageSrc='/images/cards/admProp4.webp'
           imageAlt='alter'
           imagePosition='right'
         />
         <Card
           number='05'
-          title='Contabilidad y tramitación de tasas e impuestos'
-          description='Declaración del IVA, impuesto de sociedades y valoración de inmuebles, así como declaraciones de la renta y de la empresa. Le ayudamos con todo lo necesario y nos aseguramos de que todas las cifras sean correctas.'
-          imageSrc='/images/cards/gestionFinanciera5.jpg'
+          title='Servicios y pequeños trabajos de carpintería'
+          description='Cuando la asociación busca ayuda con algún trabajo menor de carpintería, estamos aquí para ayudarle y, por supuesto, también estaremos encantados de intervenir si algún residente necesita ayuda con tareas más sencillas.'
+          imageSrc='/images/cards/admProp5.webp'
           imageAlt='alter'
           imagePosition='left'
         />
         <Card
           number='06'
-          title='Contacto con las autoridades'
-          description='Podemos representarle ante consultas de la Agencia Tributaria y otras autoridades competentes en materia financiera. También puede solicitar nuestra ayuda si necesita apoyo para gestionar sus estadísticas.'
-          imageSrc='/images/cards/gestionFinanciera6.jpg'
+          title='Informes de emergencia y averías'
+          description='La mayoría de las cosas ocurren cuando menos te lo esperas, pero en Västporten siempre estamos cerca para garantizar que recibas rápidamente la ayuda y el servicio adecuados cuando los necesites. Ofrecemos un servicio de atención al cliente completo para reportar errores las 24 horas, los 7 días de la semana, y respondemos con rapidez para resolver tus problemas.'
+          imageSrc='/images/cards/admProp6.webp'
           imageAlt='alter'
           imagePosition='right'
         />
         <Card
           number='07'
-          title='Contacto con las autoridades'
-          description='Podemos representarle ante consultas de la Agencia Tributaria y otras autoridades competentes en materia financiera. También puede solicitar nuestra ayuda si necesita apoyo para gestionar sus estadísticas.'
-          imageSrc='/images/cards/gestionFinanciera6.jpg'
+          title='Movimiento de tierras'
+          description='Si desea mejorar el entorno local, por ejemplo, creando una zona de barbacoa u otro punto de encuentro para los residentes, podemos ayudarle. Para trabajos que no podamos realizar nosotros mismos, contamos con una amplia red de subcontratistas para ayudarle.'
+          imageSrc='/images/cards/admProp7.jpg'
           imageAlt='alter'
           imagePosition='left'
         />
