@@ -3,7 +3,11 @@ import Button from "@/app/[locale]/components/molecules/boton";
 import Image from "next/image";
 import '/styles/fonts.css'; 
 import { useTranslations } from "next-intl";
-export default function Footer() {
+interface FooterProps {
+    onOpenModal : () => void;
+}
+
+export default function Footer({onOpenModal} : FooterProps) {
     const t = useTranslations("footer");
     return(
         <footer className="w-full bg-white flex justify-center py-5">
@@ -18,7 +22,7 @@ export default function Footer() {
                         href="/contact"
                     >{t("contactanos")}</Button>
                     <Button 
-                        href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+                        onClick={onOpenModal}
                         icon={<Image src="/images/error.svg" alt="Phone" width={28} height={28} />}
                         iconPosition="left"
                     >{t("reportarError")}</Button>

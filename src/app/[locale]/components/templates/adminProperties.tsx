@@ -8,6 +8,8 @@ import Footer from "../organism/footer";
 import Card from "../organism/card";
 import { Variants, easeInOut } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
+import ReportError from "../organism/reportError";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
@@ -19,6 +21,10 @@ const containerVariants: Variants = {
 };
 export default function AdminProperties() {
   const t = useTranslations('adminProperties');
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleOpenModal = () => setIsModalOpen(true);
+  const handleCloseModal = () => setIsModalOpen(false);
+
   return (
     <div className="flex flex-col items-center">
       <Header />
@@ -89,7 +95,7 @@ export default function AdminProperties() {
           imageAlt='alter'
           imagePosition='right'
         />
-        
+
         <Card
           number='07'
           title={t("card7.titulo")}
@@ -100,7 +106,8 @@ export default function AdminProperties() {
         />
       </section>
 
-      <Footer />
+      <Footer onOpenModal={handleOpenModal} />
+      {isModalOpen && <ReportError onClose={handleCloseModal} />}
     </div>
   );
 }

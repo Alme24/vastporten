@@ -41,3 +41,7 @@
   -webkit-mask-image: linear-gradient(to bottom, white 90%, transparent 100%);
   mask-image: linear-gradient(to bottom, white 90%, transparent 100%);
 }
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
+}

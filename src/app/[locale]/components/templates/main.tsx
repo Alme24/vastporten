@@ -8,8 +8,15 @@ import { Card2 } from "@/app/[locale]/components/organism/card2";
 import { Title } from "@/app/[locale]/components/molecules/Title";
 import Button from "@/app/[locale]/components/molecules/boton";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
+import ReportError from "../organism/reportError";
 export default function Main(){
     const t = useTranslations("main");
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const handleOpenModal = () => setIsModalOpen(true);
+    const handleCloseModal = () => setIsModalOpen(false);
+
     return (
         <div>
             <Header />
@@ -144,7 +151,8 @@ export default function Main(){
                 }}        
             ></motion.img>
             </div>      
-        <Footer />
+        <Footer onOpenModal={handleOpenModal}/>
+        {isModalOpen && <ReportError onClose={handleCloseModal} /> }
         </div>
     );
 }
