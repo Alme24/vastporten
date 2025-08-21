@@ -22,7 +22,7 @@ export default function Contact() {
                 />
                 <div className="relative z-10">
                     <Header />
-                    <div className="pl-7 pb-18 pt-33 lg:pl-14 bg:pb-36 bg:pt-66">
+                    <div className="px-7 py-30 lg:pb-18 lg:pt-33 lg:pl-14">
                         <HomeForm />
                     </div>
                 </div>

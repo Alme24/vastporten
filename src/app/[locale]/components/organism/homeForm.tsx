@@ -81,7 +81,7 @@ export default function HomeForm() {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center bg-base-de-botoones h-[578px] w-[760px] rounded-xl p-14">
+        <div className="flex flex-col justify-center items-center bg-white/80 lg:bg-base-de-botoones w-full max-w-[760px] rounded-xl p-6 lg:p-14">
             <h2 className="font-family-noto-telugu font-[600] text-5xl text-center text-textoscuro">
                 {t("contactanos")}
             </h2>
@@ -98,7 +98,7 @@ export default function HomeForm() {
                     {errors.nombre && <span className="text-red-500 text-sm">{errors.nombre}</span>}
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex flex-col sm:flex-row gap-4">
                     <div className="flex flex-col flex-1">
                         <input
                             type="text"
@@ -134,7 +134,7 @@ export default function HomeForm() {
                     {errors.mensaje && <span className="text-red-500 text-sm">{errors.mensaje}</span>}
                 </div>
 
-                <div className="flex gap-2">
+                <div className="flex gap-2 items-start">
                     <input
                         type="checkbox"
                         name="privacy"
