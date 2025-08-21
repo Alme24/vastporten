@@ -59,7 +59,7 @@ export default function Main(){
             />
             </motion.div>
 
-            <div className="grid grid-cols-3 pt-19 pb-14 justify-items-center w-3/4 mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 pt-20 pb-14 justify-items-center w-11/12 lg:w-3/4 mx-auto">
             <motion.div
                 initial={{opacity:0, x:"-10vw"}}
                 whileInView={{opacity: 1, x:0}}
@@ -110,41 +110,49 @@ export default function Main(){
             </motion.div>
             </div>
 
-            <div className="grid grid-cols-3 gap-6 w-3/4 justify-items-center mx-auto pt-14 pb-25">
-            <motion.div
-                className="col-span-2 justify-end"
-                initial={{opacity:0, x:"-10vw"}}
-                whileInView={{opacity: 1, x:0}}
-                viewport={{once:true, amount:0.5}}
-                transition={{
-                duration:1.5,
-                ease:"easeOut"
-                }}
-            >
-                <Title title={t("busca")} />
-                <p className="font-['Noto_Sans_Telugu'] text-[16px] text-[#4C4C4C] font-normal text-left leading-relaxed whitespace-pre-line pb-10">
-                    {t.rich('emailText', {
-                        a: (chunks) => <a href="mailto:info@vastporten.se" className="text-[#4E6D9A]">{chunks}</a>,
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-11/12 lg:w-3/4 justify-items-center mx-auto pt-14 pb-25">
+                {/* Imagen primero en mobile */}
+                <motion.img
+                    src={"/images/living.webp"}
+                    alt="Living room"
+                    height={456}
+                    width={451}
+                    className="h-full w-full rounded-[8px] order-1 lg:order-2"
+                    initial={{ opacity: 0, x: "10vw" }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{
+                    duration: 1.5,
+                    ease: "easeOut",
+                    }}
+                />
+                {/* Texto */}
+                <motion.div
+                    className="order-2 lg:order-1 lg:col-span-2 flex flex-col justify-center"
+                    initial={{ opacity: 0, x: "-10vw" }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{
+                    duration: 1.5,
+                    ease: "easeOut",
+                    }}
+                >
+                    <Title title={t("busca")} />
+                    <p className="font-['Noto_Sans_Telugu'] text-[16px] text-[#4C4C4C] font-normal text-left leading-relaxed whitespace-pre-line pb-10">
+                    {t.rich("emailText", {
+                        a: (chunks) => (
+                        <a href="mailto:info@vastporten.se" className="text-[#4E6D9A]">
+                            {chunks}
+                        </a>
+                        ),
                     })}
-                </p>
-                <div className="w-2/5"><Button href="/contact">{t("contactanos")}</Button></div>
-            </motion.div>
-            <motion.img
-                src={"/images/living.webp"}
-                alt=""
-                height={456}
-                width={451}
-                className="h-full w-full rounded-[8px]"
-                initial={{opacity:0, x:"10vw"}}
-                whileInView={{opacity: 1, x:0}}
-                viewport={{once:true, amount:0.5}}
-                transition={{
-                duration:1.5,
-                ease:"easeOut"
-                }}        
-            ></motion.img>
-            </div>      
-        <Footer />
+                    </p>
+                    <div className="w-full lg:w-2/5">
+                    <Button href="/contact">{t("contactanos")}</Button>
+                    </div>
+                </motion.div>
+            </div>
+            <Footer />
         </div>
     );
 }
