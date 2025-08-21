@@ -77,7 +77,7 @@ export default function HomeForm() {
             return;
         }
 
-        console.log("Formulario válido ✅", form);
+        console.log("Formulario válido", form);
     };
 
     return (
@@ -154,7 +154,7 @@ export default function HomeForm() {
                 <div className="flex justify-center items-center mt-4">
                     <button
                         type="submit"
-                        className="h-13 w-71 bg-[#E1EAEF] font-family-noto-telugu text-textoscuro font-[700] rounded-lg shadow-lg"
+                        className="h-13 w-71 bg-[#E1EAEF] font-family-noto-telugu text-[20px] text-textoscuro font-[700] rounded-lg shadow-lg/20"
                     >
                         {t("enviar")}
                     </button>

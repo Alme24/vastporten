@@ -1,17 +1,24 @@
+"use client"
 import Image from "next/image";
 import Header from "@/app/[locale]/components/organism/header";
 import Footer from "@/app/[locale]/components/organism/footer";
 import { Title } from "@/app/[locale]/components/molecules/Title";
-import '/styles/fonts.css'; 
+import '/styles/fonts.css';
 import { Subtitle } from "../molecules/subtitle";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
+import ReportError from "../organism/reportError";
 export default function Politica() {
     const t = useTranslations("politicas");
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const handleOpenModal = () => setIsModalOpen(true);
+    const handleCloseModal = () => setIsModalOpen(false);
 
     return (
         <div className="bg-white">
             <Header />
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-end">
                 <div className="px-8 lg:px-16 lg:pt-36">
                     <Title
@@ -38,10 +45,10 @@ export default function Politica() {
             </div>
             <div className="text-left w-full px-8 pt-1 lg:px-16 mb-40">
                 <Subtitle
-                    subtitle= {t("subtitulo2")}
+                    subtitle={t("subtitulo2")}
                     description={t("contenido2")}
                 ></Subtitle>
-            
+
                 <div className="p-8 justify-items-center">
                     <Subtitle
                         subtitle={t("subtitulo3")}
@@ -60,12 +67,12 @@ export default function Politica() {
                         <li>{t("lista.11")}</li>
                     </ul>
                 </div>
-                
+
                 <Subtitle
                     description={t("contenido4")}
                 ></Subtitle>
                 <Subtitle
-                    subtitle= {t("subtitulo5")}
+                    subtitle={t("subtitulo5")}
                     description={t("descripcion5")}
                 ></Subtitle>
                 <Subtitle
@@ -81,7 +88,8 @@ export default function Politica() {
                     description={t("descripcion7")}
                 ></Subtitle>
             </div>
-            <Footer />
+            <Footer onOpenModal={handleOpenModal} />
+            {isModalOpen && <ReportError onClose={handleCloseModal} />}
         </div>
     );
 }

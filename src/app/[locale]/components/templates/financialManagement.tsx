@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '@/app/[locale]/components/organism/header'
 import CanvaVideo from '@/app/[locale]/components/molecules/canvaVideo'
 import { Title } from '@/app/[locale]/components/molecules/Title'
@@ -8,8 +8,14 @@ import FinancialCards from '@/app/[locale]/components/molecules/financialCards'
 import Footer from '@/app/[locale]/components/organism/footer'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
+import ReportError from '../organism/reportError'
 export default function FinancialManagement() {
-  const t = useTranslations('financialManagement')
+  const t = useTranslations('financialManagement');
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+    const handleOpenModal = () => setIsModalOpen(true);
+    const handleCloseModal = () => setIsModalOpen(false);
+
 
   return (
     <div>
@@ -90,7 +96,8 @@ export default function FinancialManagement() {
         <p className='whitespace-pre-line'>{t('descripcion2')}</p>
       </div>
       </div>
-      <Footer />
+      <Footer onOpenModal={handleOpenModal}/>
+        {isModalOpen && <ReportError onClose={handleCloseModal} /> }
     </div>
   )
 }
