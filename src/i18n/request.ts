@@ -24,6 +24,7 @@ export default getRequestConfig(async ({requestLocale}) => {
     services: (await import(`../../messages/${locale}/services.json`)).default,
     technicalManagement: (await import(`../../messages/${locale}/technicalManagement.json`)).default,
     why: (await import(`../../messages/${locale}/why.json`)).default,
+    reportError: (await import(`../../messages/${locale}/reportError.json`)).default,
     // Aquí puedes añadir más namespaces
   };
   return {

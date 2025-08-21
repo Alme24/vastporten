@@ -1,12 +1,13 @@
 "use client"
 import React, { FormEvent, MouseEvent, useState } from "react";
 import '/styles/fonts.css';
-
+import { useTranslations } from "next-intl";
 interface ReportErrorProps {
     onClose: () => void;
 }
 
 export default function ReportError({ onClose }: ReportErrorProps) {
+    const t = useTranslations("reportError");
 
     const [form, setForm] = useState({
         nombre: "",
@@ -48,19 +49,19 @@ export default function ReportError({ onClose }: ReportErrorProps) {
             case "nombre":
             case "apellido":
                 if (!value || (value as string).trim().length < 3) {
-                    error = "Este campo debe tener al menos 3 caracteres.";
+                    error = t("error.tresCaracteres");
                 } else if (!regexSoloLetras.test(value as string)) {
-                    error = "Este campo solo puede contener letras.";
+                    error = t("error.soloLetras");
                 }
                 break;
             case "telefono":
                 if (!value || !regexTelefono.test(value as string)) {
-                    error = "Número de teléfono no válido (7-15 dígitos).";
+                    error = t("error.telefonoValido");
                 }
                 break;
             case "email":
                 if (!value || !regexEmail.test(value as string)) {
-                    error = "Correo electrónico no válido.";
+                    error = t("error.emailValido");
                 }
                 break;
             case "asociacionVivienda":
@@ -70,17 +71,17 @@ export default function ReportError({ onClose }: ReportErrorProps) {
             case "dirPosal":
             case "piso":
                 if (!value || (value as string).trim().length === 0) {
-                    error = "Este campo es obligatorio.";
+                    error = t("error.campoObligatorio");
                 }
                 break;
             case "mensaje":
                 if (!value || (value as string).trim().length < 10) {
-                    error = "El mensaje debe tener al menos 10 caracteres.";
+                    error = t("error.minCaracteres");
                 }
                 break;
             case "privacy":
                 if (!value) {
-                    error = "Debe aceptar los términos de privacidad.";
+                    error = t("error.privacyAccept");
                 }
                 break;
             default:
@@ -121,9 +122,9 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                 onClick={handleContentClick}
             >
                 <h2 className="text-5xl text-center font-family-noto-telugu text-textoscuro font-[600]">
-                    ¿Quieres reportar un error?
+                    {t("titulo")}
                 </h2>
-                <p className=" text-textoscuro text-[16px]">Describa su caso y nos pondremos en contacto con usted lo antes posible.</p>
+                <p className=" text-textoscuro text-[16px]">{t("descripcion")}</p>
                 <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-6 gap-4 w-full my-6">
                     <div className="flex flex-col col-span-3">
                         <input
@@ -132,7 +133,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             value={form.nombre}
                             onChange={handleChange}
                             onBlur={() => validateField("nombre", form.nombre)}
-                            placeholder="Nombre*"
+                            placeholder={t("placeholder.nombre")}
                             className="h-10 font-family-noto-telugu text-[16px] font-[500] custom-input"
                         />
                         {errors.nombre && <span className="text-red-500 text-sm mt-1">{errors.nombre}</span>}
@@ -144,7 +145,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             value={form.apellido}
                             onChange={handleChange}
                             onBlur={() => validateField("apellido", form.apellido)}
-                            placeholder="Apellido*"
+                            placeholder={t("placeholder.apellido")}
                             className="h-10 font-family-noto-telugu text-[16px] font-[500] custom-input"
                         />
                         {errors.apellido && <span className="text-red-500 text-sm mt-1">{errors.apellido}</span>}
@@ -156,7 +157,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             value={form.telefono}
                             onChange={handleChange}
                             onBlur={() => validateField("telefono", form.telefono)}
-                            placeholder="Teléfono*"
+                            placeholder={t("placeholder.telefono")}
                             className="h-10 font-family-noto-telugu text-[16px] font-[500] custom-input"
                         />
                         {errors.telefono && <span className="text-red-500 text-sm mt-1">{errors.telefono}</span>}
@@ -168,7 +169,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             value={form.email}
                             onChange={handleChange}
                             onBlur={() => validateField("email", form.email)}
-                            placeholder="Correo electrónico*"
+                            placeholder={t("placeholder.email")}
                             className="h-10 font-family-noto-telugu text-[16px] font-[500] custom-input"
                         />
                         {errors.email && <span className="text-red-500 text-sm mt-1">{errors.email}</span>}
@@ -180,7 +181,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             value={form.asociacionVivienda}
                             onChange={handleChange}
                             onBlur={() => validateField("asociacionVivienda", form.asociacionVivienda)}
-                            placeholder="Asociación de vivienda/Propiedad en alquiler*"
+                            placeholder={t("placeholder.vivienda")}
                             className="h-10 font-family-noto-telugu text-[16px] font-[500] custom-input"
                         />
                         {errors.asociacionVivienda && <span className="text-red-500 text-sm mt-1">{errors.asociacionVivienda}</span>}
@@ -192,7 +193,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             value={form.numApartamento}
                             onChange={handleChange}
                             onBlur={() => validateField("numApartamento", form.numApartamento)}
-                            placeholder="Número de apartamento*"
+                            placeholder={t("placeholder.apartamento")}
                             className="h-10 font-family-noto-telugu text-[16px] font-[500] custom-input"
                         />
                         {errors.numApartamento && <span className="text-red-500 text-sm mt-1">{errors.numApartamento}</span>}
@@ -204,7 +205,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             value={form.llaveMaestra}
                             onChange={handleChange}
                             onBlur={() => validateField("llaveMaestra", form.llaveMaestra)}
-                            placeholder="Se puede entrar con llave maestra*"
+                            placeholder={t("placeholder.llave")}
                             className="h-10 font-family-noto-telugu text-[16px] font-[500] custom-input"
                         />
                         {errors.llaveMaestra && <span className="text-red-500 text-sm mt-1">{errors.llaveMaestra}</span>}
@@ -216,7 +217,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             value={form.direccion}
                             onChange={handleChange}
                             onBlur={() => validateField("direccion", form.direccion)}
-                            placeholder="Dirección*"
+                            placeholder={t("placeholder.direccion")}
                             className="h-10 font-family-noto-telugu text-[16px] font-[500] custom-input"
                         />
                         {errors.direccion && <span className="text-red-500 text-sm mt-1">{errors.direccion}</span>}
@@ -228,7 +229,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             value={form.dirPosal}
                             onChange={handleChange}
                             onBlur={() => validateField("dirPosal", form.dirPosal)}
-                            placeholder="Dirección postal*"
+                            placeholder={t("placeholder.dirPostal")}
                             className="h-10 font-family-noto-telugu text-[16px] font-[500] custom-input"
                         />
                         {errors.dirPosal && <span className="text-red-500 text-sm mt-1">{errors.dirPosal}</span>}
@@ -240,7 +241,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             value={form.piso}
                             onChange={handleChange}
                             onBlur={() => validateField("piso", form.piso)}
-                            placeholder="Piso*"
+                            placeholder={t("placeholder.piso")}
                             className="h-10 font-family-noto-telugu text-[16px] font-[500] custom-input"
                         />
                         {errors.piso && <span className="text-red-500 text-sm mt-1">{errors.piso}</span>}
@@ -251,7 +252,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             value={form.mensaje}
                             onChange={handleChange}
                             onBlur={() => validateField("mensaje", form.mensaje)}
-                            placeholder="Mensaje (Describa su caso)*"
+                            placeholder={t("placeholder.mensaje")}
                             className="font-family-noto-telugu text-[16px] font-[500] custom-input p-4 resize-none"
                             rows={5}
                         />
@@ -267,7 +268,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             className="accent-teal-600 h-6 w-6"
                         />
                         <label htmlFor="privacy" className="text-4 font-family-noto-telugu text-textoscuro">
-                            Al realizar su solicitud de contacto, usted acepta que compartiremos los datos personales que ha elegido.
+                            {t("privacidad")}
                         </label>
                     </div>
                     {errors.privacy && <span className="text-red-500 text-sm mt-1 col-span-6">{errors.privacy}</span>}
@@ -277,7 +278,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             type="submit"
                             className="h-12 w-71 bg-[#E1EAEF] font-family-noto-telugu text-[20px] text-textoscuro font-[700] rounded-lg shadow-lg/20"
                         >
-                            Enviar
+                            {t("enviar")}
                         </button>
                     </div>
                 </form>

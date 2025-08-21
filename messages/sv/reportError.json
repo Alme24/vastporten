@@ -1,0 +1,28 @@
+{
+    "error": {
+        "tresCaracteres": "Detta fält måste innehålla minst 3 tecken.",
+        "soloLetras": "Detta fält får endast innehålla bokstäver.",
+        "telefonoValido": "Ogiltigt telefonnummer (7-15 siffror).",
+        "emailValido": "Ogiltig e-postadress.",
+        "campoObligatorio": "Detta fält är obligatoriskt.",
+        "minCaracteres": "Detta fält måste innehålla minst 10 tecken.",
+        "privacyAccept": "Du måste godkänna sekretesspolicyn."
+    },
+    "titulo": "Vill du rapportera ett fel?",
+    "descripcion": "Beskriv ditt ärende så kontaktar vi dig så snart som möjligt.",
+    "placeholder": {
+        "nombre": "Förnamn *",
+        "apellido": "Efternamn *",
+        "telefono": "Telefon *",
+        "email": "E-post *",
+        "vivienda": "Bostadsförening/Hyresfastighet *",
+        "apartamento": "Lägenhetsnummer *",
+        "llave": "Kan öppnas med huvudnyckel *",
+        "direccion": "Adress *",
+        "dirPostal": "Postadress *",
+        "piso": "Våning *",
+        "mensaje": "Meddelande (Beskriv ditt ärende) *"
+    },
+    "privacidad": "Genom att skicka din kontaktförfrågan godkänner du att vi delar de personuppgifter du har valt.",
+    "enviar": "Skicka"
+}
