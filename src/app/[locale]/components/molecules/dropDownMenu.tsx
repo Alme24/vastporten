@@ -49,7 +49,7 @@ export default function DropdownMenu({ mainLabel, items, mobile, variant }: Drop
       </Button>
 
       {open && (
-        <div className="absolute left-0 mt-2 w-auto bg-[#F4F4F4] shadow-lg rounded-[8px] px-2.5 py-3 gap-5">
+        <div className="absolute left-0 mt-2 w-fit bg-[#F4F4F4] shadow-lg rounded-[8px] px-2.5 py-2.5 gap-5">
           {items.map((item, idx) => (
             <Button key={idx} href={item.href} variant="btnDrop">
               {item.label}

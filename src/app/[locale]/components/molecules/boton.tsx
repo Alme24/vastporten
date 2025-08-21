@@ -24,7 +24,7 @@ const variantStyles: Record<Variant, string> = {
     default: "bg-[#E1EAEF] shadow-[4px_4px_14px_rgba(89,89,89,0.25)] text-[#4C4C4C] hover:bg-[#d5e0e6] font-bold text-[20px] px-4 py-4 rounded-[8px]",
     btnHeader: "text-white px-2 py-2 font-normal text-[16px] hover:border-b-2 hover:border-white w-auto",
     btnHeaderWhite: "text-textoscuro px-2 py-2 font-normal text-[16px] hover:border-b-2 hover:border-textoscuro w-auto",
-    btnDrop: "bg-[#F4F4F4] text-textoscuro px-2 py-2 font-normal text-[16px] hover:bg-white rounded-[8px]",
+    btnDrop: "bg-[#F4F4F4] text-textoscuro px-2 py-4 font-normal text-[16px] hover:bg-white rounded-[8px]",
 };
 
 export default function Button({
