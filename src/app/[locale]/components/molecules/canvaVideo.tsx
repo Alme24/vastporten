@@ -1,5 +1,6 @@
+"use client";
 import { useTranslations } from "next-intl";
-
+import { useEffect,useRef } from "react";
 interface CanvaVideoProps {
     videoSrc: string;
     altText: string;
@@ -10,10 +11,16 @@ export default function CanvaVideo({
     videoSrc, title, altText
 }: CanvaVideoProps) {
     const t = useTranslations('canvaVideo');
-
+    const videoRef = useRef<HTMLVideoElement>(null);
+    useEffect(() => {
+        if (videoRef.current) {
+            videoRef.current.playbackRate = 0.7;
+        }
+    }, []);
     return (
         <div className="relative w-full h-screen overflow-hidden">
             <video
+                ref={videoRef}
                 autoPlay
                 loop
                 muted

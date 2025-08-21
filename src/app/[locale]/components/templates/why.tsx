@@ -27,7 +27,7 @@ export default function Why() {
                 />
 
                 <motion.div
-                    className="items-center justify-center absolute top-1/3 left-1/4"
+                    className="items-center justify-center absolute top-1/3 left-1/10 lg:left-1/4"
                     initial={{ x: "-100vw" }}
                     animate={{ x: 0 }}
                     transition={{
@@ -52,7 +52,7 @@ export default function Why() {
             >{t("contenido")}</motion.p>
 
             <motion.div
-                className="grid grid-cols-[400px_auto] gap-x-10 p-8 mb-40 items-center justify-items-center bg-[#F4F4F4] rounded-[8px] w-4/5 mx-auto shadow-lg"
+                className="grid grid-cols-1 lg:grid-cols-[400px_auto] gap-10 p-8 mb-40 items-center justify-items-center bg-[#F4F4F4] rounded-[8px] w-4/5 mx-auto shadow-lg"
                 initial={{ opacity: 0, y: "40vh" }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0 }}
@@ -66,6 +66,7 @@ export default function Why() {
                     alt=""
                     width={400}
                     height={424}
+                    className="w-full h-auto"
                 />
                 <Subtitle description={t("subtitulo")}></Subtitle>
             </motion.div>

@@ -19,8 +19,8 @@ export default function Politica() {
         <div className="bg-white">
             <Header />
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-end">
-                <div className="px-8 lg:px-16 lg:pt-36">
+            <div className="grid grid-cols-1 lg:grid-cols-2 sm:justify-items-center lg:justify-items-end">
+                <div className="px-8 lg:px-16 pt-28 lg:pt-36">
                     <Title
                         title={t("titulo")}
                     />
@@ -33,7 +33,7 @@ export default function Politica() {
                         description={t("contenido")}>
                     </Subtitle>
                 </div>
-                <div className="-mt-28">
+                <div className="mt-10 lg:-mt-2">
                     <Image
                         src="/images/Rectangle-21.webp"
                         alt="Imagen de oficina"

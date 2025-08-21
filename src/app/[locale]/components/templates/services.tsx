@@ -29,7 +29,7 @@ export default function OurServices() {
                     className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2"
                     initial={{ opacity: 0, y: "20vh" }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: false, amount: 0 }}
+                    viewport={{ once: true, amount: 0 }}
                     transition={{
                         duration: 1.5,
                         ease: "easeOut"
@@ -43,7 +43,7 @@ export default function OurServices() {
                 className="font-['Noto_Sans_Telugu'] text-[#4C4C4C] leading-relaxed text-center text-[16px] font-normal py-18 max-w-2/3 my-4 justify-items-center mx-auto"
                 initial={{ opacity: 0, y: "20vh" }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false, amount: 0 }}
+                viewport={{ once: true, amount: 0 }}
                 transition={{
                     duration: 1.5,
                     ease: "easeOut"
@@ -56,7 +56,7 @@ export default function OurServices() {
                 className="justify-items-center py-8 px-10 max-w-1/2 my-15 mx-auto bg-[#F4F4F4] rounded-[8px] shadow-lg"
                 initial={{ opacity: 0, x: "-50vw" }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false, amount: 0.1 }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{
                     duration: 2,
                     ease: "easeOut",
@@ -87,22 +87,22 @@ export default function OurServices() {
                 className="justify-items-center w-3/4 mx-auto my-15 py-15"
                 initial={{ opacity: 0, x: "-50vw" }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false, amount: 0.1 }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{
                     duration: 2,
                     ease: "easeOut",
                 }}
             >
                 <Title title={t("subtitulo")} />
-                <div className="grid grid-cols-3 gap-x-2 p-2 justify-items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 p-2 justify-items-center">
                     <Image
                         src={"/images/hombres.webp"}
                         alt=""
                         width={333}
                         height={344}
-                        className="h-full"
+                        className="w-full h-auto"
                     />
-                    <div className="col-span-2">
+                    <div className="col-span-2 w-auto">
                         <Subtitle description={t("descripcion2")} />
                     </div>
                 </div>
