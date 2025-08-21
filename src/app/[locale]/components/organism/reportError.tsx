@@ -117,14 +117,14 @@ export default function ReportError({ onClose }: ReportErrorProps) {
             onClick={onClose}
         >
             <div 
-                className="relative flex flex-col justify-center items-center bg-base-de-botoones m-10 rounded-xl p-12 w-9/10  overflow-y-auto"
+                className="relative flex flex-col justify-start items-center bg-base-de-botoones rounded-xl p-12 w-[90%] max-w-11/12 max-h-[90vh] overflow-y-auto"
                 onClick={handleContentClick}
             >
                 <h2 className="text-5xl text-center font-family-noto-telugu text-textoscuro font-[600]">
                     ¿Quieres reportar un error?
                 </h2>
                 <p className=" text-textoscuro text-[16px]">Describa su caso y nos pondremos en contacto con usted lo antes posible.</p>
-                <form onSubmit={handleSubmit} className="grid grid-cols-6 gap-4 w-full my-6">
+                <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-6 gap-4 w-full my-6">
                     <div className="flex flex-col col-span-3">
                         <input
                             type="text"
