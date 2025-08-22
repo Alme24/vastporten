@@ -39,17 +39,17 @@ export default function Politica() {
                         alt="Imagen de oficina"
                         width={692}
                         height={984}
-                        className="w-auto h-full flex-shrink-0 mask-bottom-gradient z-0"
+                        className="w-auto mx-auto h-full flex-shrink-0 mask-bottom-gradient z-0"
                     />
                 </div>
             </div>
-            <div className="text-left w-full px-8 pt-1 lg:px-16 mb-40">
+            <div className="text-left w-full px-8 pt-1 lg:px-16 md:mb-40 mb-10">
                 <Subtitle
                     subtitle={t("subtitulo2")}
                     description={t("contenido2")}
                 ></Subtitle>
 
-                <div className="p-8 justify-items-center">
+                <div className="md:p-8 justify-items-center my-10">
                     <Subtitle
                         subtitle={t("subtitulo3")}
                     ></Subtitle>
@@ -78,7 +78,7 @@ export default function Politica() {
                 <Subtitle
                     subtitle={t("subtitulo6")}
                 ></Subtitle>
-                <p className="font-['Noto_Sans_Telugu'] text-[16px] text-[#4C4C4C] font-normal text-left leading-relaxed whitespace-pre-line">
+                <p className="font-['Noto_Sans_Telugu'] text-[16px] text-[#4C4C4C] font-normal text-justify md:text-left leading-relaxed whitespace-pre-line">
                     {t.rich('descripcion6', {
                         a: (chunks) => <a href="mailto:info@vastporten.se" className="text-[#4E6D9A]">{chunks}</a>,
                     })}

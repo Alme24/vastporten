@@ -16,7 +16,7 @@ export default function OurServices() {
     const handleCloseModal = () => setIsModalOpen(false);
     return (
         <div>
-            <Header></Header>
+            <Header />
             <div className="relative h-[100vh] w-full">
                 <Image
                     src="/images/silla.webp"
@@ -40,7 +40,7 @@ export default function OurServices() {
             </div>
 
             <motion.p
-                className="font-['Noto_Sans_Telugu'] text-[#4C4C4C] leading-relaxed text-center text-[16px] font-normal py-18 max-w-2/3 my-4 justify-items-center mx-auto"
+                className="font-family-noto-telugu text-textoscuro leading-relaxed text-center text-[14px] md:text-[16px] font-normal max-w-2/3 md:my-50 my-20 justify-items-center mx-auto"
                 initial={{ opacity: 0, y: "20vh" }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0 }}
@@ -53,21 +53,21 @@ export default function OurServices() {
             </motion.p>
 
             <motion.div
-                className="justify-items-center py-8 px-10 max-w-1/2 my-15 mx-auto bg-[#F4F4F4] rounded-[8px] shadow-lg"
+                className="justify-items-center py-8 px-10 md:max-w-1/2 my-15 mx-auto bg-[#F4F4F4] rounded-[8px] shadow-lg"
                 initial={{ opacity: 0, x: "-50vw" }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{
-                    duration: 2,
+                    duration: 1,
                     ease: "easeOut",
                 }}
             >
                 <Subtitle subtitle={t("lista.titulo")} />
-                <ul className="font-['Noto_Sans_Telugu'] text-[14px] text-[#4C4C4C] font-normal text-left leading-relaxed list-disc pl-6">
+                <ul className="font-family-noto-telugu text-[14px] text-textoscuro font-normal text-left leading-relaxed list-disc pl-6">
                     <li>{t("lista.1")}</li>
                     <li>{t("lista.2")}</li>
                     <li>{t("lista.3")}</li>
-                    <li>{t("lista.4")} </li>
+                    <li>{t("lista.4")}</li>
                     <li>{t("lista.5")}</li>
                     <li>{t("lista.6")}</li>
                     <li>{t("lista.7")}</li>
@@ -84,12 +84,12 @@ export default function OurServices() {
 
 
             <motion.div
-                className="justify-items-center w-3/4 mx-auto my-15 py-15"
+                className="justify-items-center w-3/4 mx-auto md:my-50 mb-10"
                 initial={{ opacity: 0, x: "-50vw" }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{
-                    duration: 2,
+                    duration: 1,
                     ease: "easeOut",
                 }}
             >
@@ -102,7 +102,7 @@ export default function OurServices() {
                         height={344}
                         className="w-full h-auto"
                     />
-                    <div className="col-span-2 w-auto">
+                    <div className="col-span-2 w-auto lg:ml-10">
                         <Subtitle description={t("descripcion2")} />
                     </div>
                 </div>

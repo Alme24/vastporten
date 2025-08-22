@@ -18,7 +18,7 @@ export default function FinancialManagement() {
 
 
   return (
-    <div>
+    <div className=' '>
       <Header />
       <div className='flex flex-col items-center'>
         <CanvaVideo
@@ -26,7 +26,7 @@ export default function FinancialManagement() {
           altText='video'
           title={t("titulo")}
         />
-        <motion.div className='w-1/2 text-center font-family-noto-telugu text-textoscuro font-[400] text-[16px] my-60'
+        <motion.div className='md:w-1/2 w-3/4 text-center font-family-noto-telugu text-textoscuro font-[400] text-[16px] md:my-60 my-20'
           initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
@@ -36,7 +36,7 @@ export default function FinancialManagement() {
         </motion.div>
         <FinancialCards />
 
-      <div className=' mt-40'>
+      <div className=' mt-40 w-3/4'>
         <Title title={t('subtitulo')} />
       </div>
       <section className='w-3/4 mt-10'>
@@ -89,10 +89,10 @@ export default function FinancialManagement() {
           imagePosition='right'
         />
       </section>
-      <div className=' mt-40'>
+      <div className=' md:mt-40 mt-10'>
         <Title title={t('subtitulo2')} />
       </div>
-        <div className='w-49/100 text-center font-family-noto-telugu text-textoscuro font-[400] text-[16px] mt-4 mb-40'>
+        <div className='md:w-49/100 w-3/4 text-center font-family-noto-telugu text-textoscuro font-[400] text-[16px] mt-4 md:mb-40 mb-10'>
         <p className='whitespace-pre-line'>{t('descripcion2')}</p>
       </div>
       </div>

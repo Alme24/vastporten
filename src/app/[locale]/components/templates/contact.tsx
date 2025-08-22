@@ -12,7 +12,7 @@ export default function Contact() {
 
     return (
         <div>
-            <section className="relative mb-40">
+            <section className="relative md:mb-40">
                 <Image
                     src="/images/contact.webp"
                     alt=""
