@@ -11,7 +11,7 @@ export default function Footer({onOpenModal} : FooterProps) {
     const t = useTranslations("footer");
     return(
         <footer className="w-full bg-white flex justify-center py-5">
-            <div className="flex justify-center items-center gap-8 max-w-4xl w-full px-4 py-5 border-t-1 border-t-gray-300">
+            <div className="sm:flex justify-center items-center gap-8 max-w-4xl w-full px-4 py-5 border-t-1 border-t-gray-300">
                 <div className="flex flex-col gap-4">
                     <Button 
                         href="tel:033480196"
@@ -27,7 +27,7 @@ export default function Footer({onOpenModal} : FooterProps) {
                         iconPosition="left"
                     >{t("reportarError")}</Button>
                 </div>
-                <div className="text-[#4C4C4C]  leading-relaxed whitespace-pre-line font-normal text-[16px] font-['Noto_Sans_Telugu'] max-w-md">
+                <div className="text-textoscuro mt-10 sm:mt-0 leading-relaxed whitespace-pre-line font-normal text-[12px] sm:text-[16px] font-['Noto_Sans_Telugu'] max-w-md">
                     <p className="whitespace-pre-line">
                         {t("direccion")}
                     </p>

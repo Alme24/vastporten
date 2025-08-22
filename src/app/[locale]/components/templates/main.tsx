@@ -51,7 +51,7 @@ export default function Main(){
             />
 
             <motion.div
-            className="justify-items-center w-3/5 mx-auto"
+            className="justify-items-center w-full sm:w-3/5 mx-auto"
             initial={{opacity:0, y:"10vh"}}
             whileInView={{opacity:1, y:0.5}}
             viewport={{once:true, amount:0}}
@@ -145,7 +145,7 @@ export default function Main(){
                     }}
                 >
                     <Title title={t("busca")} />
-                    <p className="font-['Noto_Sans_Telugu'] text-[16px] text-[#4C4C4C] font-normal text-left leading-relaxed whitespace-pre-line pb-10">
+                    <p className="font-['Noto_Sans_Telugu'] sm:text-[16px] text-[#4C4C4C] text-[12px] text-left leading-relaxed whitespace-pre-line pb-10">
                     {t.rich("emailText", {
                         a: (chunks) => (
                         <a href="mailto:info@vastporten.se" className="text-[#4E6D9A]">
