@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { useTranslations } from "next-intl";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 export default function HomeForm() {
     const t = useTranslations("homeForm");
     const [form, setForm] = useState({
@@ -56,7 +58,8 @@ export default function HomeForm() {
                 }
                 break;
         }
-        setErrors((prev) => ({ ...prev, [name]: error }));
+        setErrors((prev) => ({ ...prev, [name]: error })); 
+        return error;
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -67,17 +70,82 @@ export default function HomeForm() {
         validateField(name, newValue);
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async(e: React.FormEvent) => {
         e.preventDefault();
 
-        Object.entries(form).forEach(([key, value]) => validateField(key, value));
+        let newErrors: Record<string, string> = {};
+        Object.entries(form).forEach(([key, value]) => {
+            const error = validateField(key, value); 
+            newErrors[key] = error;
+        });
 
-        if (Object.values(errors).some((err) => err !== "")) {
-            console.log("Errores en el formulario:", errors);
+        // Si hay algún error, cancelamos
+        if (Object.values(newErrors).some((err) => err !== "")) {
+            Swal.fire({
+            icon: "error",
+            title: t("modal.tituloError"),
+            text: t("modal.errorValidacion"),
+            confirmButtonText: t("modal.btnAceptar"),
+            customClass: {
+                title: "swal-title-custom",
+                htmlContainer: "swal-content-custom",
+                confirmButton: "swal-button-custom"
+            }
+            });
             return;
         }
 
         console.log("Formulario válido", form);
+        Swal.fire({
+            title: t("modal.enviando"),
+            allowOutsideClick: false,
+            didOpen: () => {
+            Swal.showLoading();
+            },
+            customClass: {
+                title: "swal-title-custom",
+            }
+        });
+
+        try {
+        await emailjs.send(
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_CONTACT!,
+            form,
+            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        );
+        Swal.fire({
+            icon: "success",
+            title: t("modal.enviadoTitulo"),
+            text: t("modal.enviadoText"),
+            showConfirmButton: false,
+            timer: 3500,
+            customClass: {
+                title: "swal-title-custom",
+                htmlContainer: "swal-content-custom"
+            }
+        });
+        setForm({
+            nombre: "",
+            telefono: "",
+            email: "",
+            mensaje: "",
+            privacy: false,
+        });
+        } catch (error) {
+        console.error(error);
+        Swal.fire({
+            icon: "error",
+            title: t("modal.error"),
+            text: t("modal.errorText"),
+            confirmButtonText: t("modal.btnEntendido"),
+            customClass: {
+                title: "swal-title-custom",
+                htmlContainer: "swal-content-custom",
+                confirmButton: "swal-button-custom"
+            }
+        });
+        }
     };
 
     return (

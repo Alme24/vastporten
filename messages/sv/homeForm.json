@@ -15,5 +15,16 @@
         "emailValido": "Ange en giltig e-postadress.",
         "mensajeCaracteres": "Meddelandet måste innehålla minst 10 tecken.",
         "privacyAccept": "Du måste acceptera integritetspolicyn."
+    },
+    "modal": {
+        "tituloError": "Fel av validering",
+        "errorValidacion": "Formuläret innehåller ofullständiga eller ogiltiga fält. Kontrollera informationen innan du fortsätter.",
+        "enviando": "Skickar...",
+        "enviadoTitulo": "Skickat!",
+        "enviadoText": "Ditt meddelande har skickats korrekt.",
+        "error": "Fel",
+        "errorText": "Ett problem uppstod vid skickandet av meddelandet. Försök igen.",
+        "btnEntendido": "Förstått",
+        "btnAceptar": "Acceptera"
     }
 }

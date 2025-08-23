@@ -45,3 +45,35 @@
 .modal-overlay {
   background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
 }
+
+/* globals.css */
+.swal-title-custom {
+  font-family: 'Noto Sans Telugu', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #4c4c4c;
+}
+
+.swal-content-custom {
+  font-family: 'Noto Sans Telugu', sans-serif;
+  color: #4c4c4c;
+  font-size: 16px;
+}
+
+.swal-button-custom {
+  background-color: #E1EAEF;
+  box-shadow: 4px 4px 14px rgba(89, 89, 89, 0.25);
+  color: #4C4C4C;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 16px; 
+  padding-inline: 32px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.swal-button-custom:hover{
+  background-color: #d5e0e6;
+}
+

@@ -2,6 +2,9 @@
 import React, { FormEvent, MouseEvent, useState } from "react";
 import '/styles/fonts.css';
 import { useTranslations } from "next-intl";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+
 interface ReportErrorProps {
     onClose: () => void;
 }
@@ -88,28 +91,103 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                 break;
         }
         setErrors((prev) => ({ ...prev, [name]: error }));
+        return error;
     };
 
     const handleContentClick = (e: MouseEvent) => {
         e.stopPropagation();
     };
 
-     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value, type, checked } = e.target as HTMLInputElement;
         const newValue = type === "checkbox" ? checked : value;
         setForm((prev) => ({ ...prev, [name]: newValue }));
     };
 
-    const handleSubmit = (e: FormEvent) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
-        Object.keys(form).forEach(key => validateField(key, form[key as keyof typeof form]));
+        Object.keys(form).forEach((key) =>
+        validateField(key, form[key as keyof typeof form])
+        );
 
-        const hasErrors = Object.values(errors).some(err => err !== "");
-        if (hasErrors) {
-            console.log("Errores en el formulario:", errors);
+        let newErrors: Record<string, string> = {};
+        Object.entries(form).forEach(([key, value]) => {
+            const error = validateField(key, value); 
+            newErrors[key] = error;
+        });
+
+        if (Object.values(newErrors).some((err) => err !== "")) {
+            Swal.fire({
+            icon: "error",
+            title: t("modal.tituloError"),
+            text: t("modal.errorValidacion"),
+            confirmButtonText: t("modal.btnAceptar"),
+            customClass: {
+                title: "swal-title-custom",
+                htmlContainer: "swal-content-custom",
+                confirmButton: "swal-button-custom"
+            }
+            });
             return;
         }
-        console.log("Formulario válido", form);
+
+        Swal.fire({
+            title: t("modal.enviando"),
+            allowOutsideClick: false,
+            didOpen: () => {
+            Swal.showLoading();
+            },
+            customClass: {
+                title: "swal-title-custom",
+            }
+        });
+
+        try {
+        await emailjs.send(
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ERROR!,
+            form,
+            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        );
+        Swal.fire({
+            icon: "success",
+            title: t("modal.enviadoTitulo"),
+            text: t("modal.enviadoText"),
+            showConfirmButton: false,
+            timer: 3500,
+            customClass: {
+                title: "swal-title-custom",
+                htmlContainer: "swal-content-custom"
+            }
+        });
+        setForm({
+            nombre: "",
+            apellido: "",
+            telefono: "",
+            email: "",
+            asociacionVivienda: "",
+            numApartamento: "",
+            llaveMaestra: "",
+            direccion: "",
+            dirPosal: "",
+            piso: "",
+            mensaje: "",
+            privacy: false,
+        });
+        } catch (error) {
+            console.error(error);
+            Swal.fire({
+                icon: "error",
+                title: t("modal.error"),
+                text: t("modal.errorText"),
+                confirmButtonText: t("modal.btnEntendido"),
+                customClass: {
+                    title: "swal-title-custom",
+                    htmlContainer: "swal-content-custom",
+                    confirmButton: "swal-button-custom"
+                }
+            });
+        }
     };
 
     return (
