@@ -169,7 +169,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
             numApartamento: "",
             llaveMaestra: "",
             direccion: "",
-            dirPosal: "",
+            dirPostal: "",
             piso: "",
             mensaje: "",
             privacy: false,
