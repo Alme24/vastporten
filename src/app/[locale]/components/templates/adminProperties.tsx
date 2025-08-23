@@ -26,7 +26,7 @@ export default function AdminProperties() {
   const handleCloseModal = () => setIsModalOpen(false);
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center overflow-x-hidden">
       <Header />
       <CanvaVideo
         videoSrc='/video/bg1.mp4'
@@ -34,7 +34,7 @@ export default function AdminProperties() {
         title={t('titulo')}
       />
       <motion.div
-        className="text-[16px] text-textoscuro font-family-noto-telugu w-1/2 mx-auto my-40 text-center"
+        className="text-[16px] text-textoscuro font-family-noto-telugu w-3/4 sm:w-1/2 mx-auto my-15 md:my-40 md:text-center text-justify"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -44,9 +44,9 @@ export default function AdminProperties() {
       </motion.div>
       <InfoAdminProperties />
       <div className="w-3/4 m-auto">
-        <h1 className=" text-5xl text-textoscuro font-[600] text-center my-10">{t('subtitulo')}</h1>
+        <h1 className=" text-3xl md:text-5xl md:text-center text-textoscuro font-[600] md:my-10">{t('subtitulo')}</h1>
       </div>
-      <section className='w-3/4 mt-10 mb-40'>
+      <section className='w-3/4 mt-10 md:mb-40 mb-10'>
         <Card
           number='01'
           title={t("card1.titulo")}

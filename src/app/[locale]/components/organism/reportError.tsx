@@ -21,7 +21,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
         numApartamento: "",
         llaveMaestra: "",
         direccion: "",
-        dirPosal: "",
+        dirPostal: "",
         piso: "",
         mensaje: "",
         privacy: false,
@@ -36,7 +36,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
         numApartamento: "",
         llaveMaestra: "",
         direccion: "",
-        dirPosal: "",
+        dirPostal: "",
         piso: "",
         mensaje: "",
         privacy: "",
@@ -71,7 +71,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
             case "numApartamento":
             case "llaveMaestra":
             case "direccion":
-            case "dirPosal":
+            case "dirPostal":
             case "piso":
                 if (!value || (value as string).trim().length === 0) {
                     error = t("error.campoObligatorio");
@@ -199,11 +199,11 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                 className="relative flex flex-col justify-start items-center bg-base-de-botoones rounded-xl p-12 w-[90%] max-w-11/12 max-h-[90vh] overflow-y-auto"
                 onClick={handleContentClick}
             >
-                <h2 className="text-5xl text-center font-family-noto-telugu text-textoscuro font-[600]">
+                <h2 className="md:text-5xl text-3xl text-center font-family-noto-telugu text-textoscuro font-[600]">
                     {t("titulo")}
                 </h2>
                 <p className=" text-textoscuro text-[16px]">{t("descripcion")}</p>
-                <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-6 gap-4 w-full my-6">
+                <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-6 gap-4 w-full my-6">
                     <div className="flex flex-col col-span-3">
                         <input
                             type="text"
@@ -303,14 +303,14 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                     <div className="flex flex-col col-span-2">
                         <input
                             type="text"
-                            name="dirPosal"
-                            value={form.dirPosal}
+                            name="dirPostal"
+                            value={form.dirPostal}
                             onChange={handleChange}
-                            onBlur={() => validateField("dirPosal", form.dirPosal)}
+                            onBlur={() => validateField("dirPostal", form.dirPostal)}
                             placeholder={t("placeholder.dirPostal")}
                             className="h-10 font-family-noto-telugu text-[16px] font-[500] custom-input"
                         />
-                        {errors.dirPosal && <span className="text-red-500 text-sm mt-1">{errors.dirPosal}</span>}
+                        {errors.dirPostal && <span className="text-red-500 text-sm mt-1">{errors.dirPostal}</span>}
                     </div>
                     <div className="flex flex-col col-span-2">
                         <input

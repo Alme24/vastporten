@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 export default function InfoAdminProperties() {
   const t = useTranslations("infoAdminProperties");
   return (
-    <section className="w-3/4 mx-auto px-4 py-12 flex flex-col md:flex-row gap-8 font-family-noto-telugu">
+    <section className="w-3/4 mx-auto md:px-4 md:py-12 flex flex-col md:flex-row gap-8 font-family-noto-telugu">
       <motion.div 
         className="relative w-full md:w-[40%] flex-shrink-0"
         initial={{ opacity: 0, x: -150 }}
@@ -37,11 +37,11 @@ export default function InfoAdminProperties() {
           </motion.h2>
 
           <motion.div
-            className="space-y-4 text-[16px] text-textoscuro leading-relaxed"
+            className="space-y-4 text-[16px] text-textoscuro leading-relaxed text-justify"
             initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <p>
               {t("descripcion1")}
@@ -59,7 +59,7 @@ export default function InfoAdminProperties() {
           transition={{ duration: 2, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.5 }}
         >
-          <div className="relative col-span-2 aspect-[15/8]">
+          <div className="hidden sm:relative col-span-2 aspect-[15/8]">
             <Image
               src="/images/adminProperties/adminProperties2.jpg"
               alt="Entrega de llaves"
@@ -67,7 +67,7 @@ export default function InfoAdminProperties() {
               className="object-cover grayscale-50"
             />
           </div>
-          <div className="relative w-full aspect-[214/240]">
+          <div className=" hidden sm:relative w-full aspect-[214/240]">
             <Image
               src="/images/adminProperties/adminProperties3.jpg"
               alt="Reunión de trabajo"

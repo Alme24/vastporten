@@ -41,7 +41,7 @@ export default function Why() {
             </div>
 
             <motion.p
-                className="font-['Noto_Sans_Telugu'] text-[#4C4C4C] leading-relaxed text-center text-[16px] font-normal  max-w-2/3 my-50 justify-items-center mx-auto"
+                className="font-['Noto_Sans_Telugu'] text-[#4C4C4C] leading-relaxed md:text-center text-justify text-[16px] font-normal my-20 max-w-2/3 md:my-50 justify-items-center mx-auto"
                 initial={{ opacity: 0, x: "40vw" }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.5 }}
@@ -52,7 +52,7 @@ export default function Why() {
             >{t("contenido")}</motion.p>
 
             <motion.div
-                className="grid grid-cols-1 lg:grid-cols-[400px_auto] gap-10 p-8 mb-40 items-center justify-items-center bg-[#F4F4F4] rounded-[8px] w-4/5 mx-auto shadow-lg"
+                className="grid grid-cols-1 lg:grid-cols-[400px_auto] gap-10 p-8 md:mb-40 mb-10 items-center justify-items-center bg-[#F4F4F4] rounded-[8px] md:w-4/5 mx-auto shadow-lg"
                 initial={{ opacity: 0, y: "40vh" }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0 }}

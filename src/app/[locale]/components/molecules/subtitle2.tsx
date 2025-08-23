@@ -7,12 +7,12 @@ export const SubtitleHome = ({ subtitle, description }: Props) =>{
     return (
         <div className=" text-[#4C4C4C] text-center h-fit font-normal leading-relaxed w-3/4">
             {subtitle && (
-            <h2 className="font-['Qwigley'] text-[70px] py-4">
+            <h2 className="font-['Qwigley'] text-[50px] py-4 sm:text-[70px]">
                 {subtitle}
             </h2>
             )}
             {description && (
-            <p className="font-['Noto_Sans_Telugu'] text-[14px] whitespace-pre-line">
+            <p className="font-['Noto_Sans_Telugu'] text-[14px] md:text-[16px] whitespace-pre-line">
             {description}
             </p>
             )}

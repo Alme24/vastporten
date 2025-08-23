@@ -150,7 +150,7 @@ export default function HomeForm() {
 
     return (
         <div className="flex flex-col justify-center items-center bg-white/80 lg:bg-base-de-botoones w-full max-w-[760px] rounded-xl p-6 lg:p-14">
-            <h2 className="font-family-noto-telugu font-[600] text-5xl text-center text-textoscuro">
+            <h2 className="font-family-noto-telugu font-[600] text-3xl md:text-5xl text-center text-textoscuro">
                 {t("contactanos")}
             </h2>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full m-4">
@@ -161,7 +161,7 @@ export default function HomeForm() {
                         value={form.nombre}
                         onChange={handleChange}
                         placeholder={t("placeholder.nombre")}
-                        className="h-10 font-family-noto-telugu text-[16px] font-[500] custom-input"
+                        className="h-10 font-family-noto-telugu text-[14px] md:text-[16px] font-[500] custom-input"
                     />
                     {errors.nombre && <span className="text-red-500 text-sm">{errors.nombre}</span>}
                 </div>
@@ -174,7 +174,7 @@ export default function HomeForm() {
                             value={form.telefono}
                             onChange={handleChange}
                             placeholder={t("placeholder.telefono")}
-                            className="h-10 font-family-noto-telugu text-[16px] font-[500] custom-input"
+                            className="h-10 font-family-noto-telugu text-[14px] md:text-[16px] font-[500] custom-input"
                         />
                         {errors.telefono && <span className="text-red-500 text-sm">{errors.telefono}</span>}
                     </div>
@@ -185,7 +185,7 @@ export default function HomeForm() {
                             value={form.email}
                             onChange={handleChange}
                             placeholder={t("placeholder.email")}
-                            className="h-10 font-family-noto-telugu text-[16px] font-[500] custom-input"
+                            className="h-10 font-family-noto-telugu text-[14px] md:text-[16px] font-[500] custom-input"
                         />
                         {errors.email && <span className="text-red-500 text-sm">{errors.email}</span>}
                     </div>
@@ -197,7 +197,7 @@ export default function HomeForm() {
                         value={form.mensaje}
                         onChange={handleChange}
                         placeholder={t("placeholder.mensaje")}
-                        className="font-family-noto-telugu p-4 text-[16px] font-[500] custom-input resize-none h-31"
+                        className="font-family-noto-telugu p-4 text-[14px] md:text-[16px] font-[500] custom-input resize-none h-31"
                     />
                     {errors.mensaje && <span className="text-red-500 text-sm">{errors.mensaje}</span>}
                 </div>
@@ -212,7 +212,7 @@ export default function HomeForm() {
                     />
                     <label
                         htmlFor="privacy"
-                        className="text-4 font-family-noto-telugu text-textoscuro"
+                        className="md:text-4 text-[14px] font-family-noto-telugu text-textoscuro"
                     >
                         {t("descripcion")}
                     </label>
@@ -222,7 +222,7 @@ export default function HomeForm() {
                 <div className="flex justify-center items-center mt-4">
                     <button
                         type="submit"
-                        className="h-13 w-71 bg-[#E1EAEF] font-family-noto-telugu text-[20px] text-textoscuro font-[700] rounded-lg shadow-lg/20"
+                        className="h-13 w-71 bg-[#E1EAEF] font-family-noto-telugu text-4 md:text-[20px] text-textoscuro font-[700] rounded-lg shadow-lg/20"
                     >
                         {t("enviar")}
                     </button>
