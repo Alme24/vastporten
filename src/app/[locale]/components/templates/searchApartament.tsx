@@ -27,7 +27,7 @@ export default function Search() {
 
     return (
         <div>
-            <section className="relative min-h-screen mb-30">
+            <section className="relative min-h-screen mb-10 md:mb-30">
                 <Header />
                 <Image
                     src="/images/imagen23.webp"

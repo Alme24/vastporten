@@ -20,7 +20,7 @@ export default function FinancialManagement() {
   return (
     <div className=' '>
       <Header />
-      <div className='flex flex-col items-center'>
+      <div className='flex flex-col items-center overflow-x-hidden'>
         <CanvaVideo
           videoSrc='/video/bg2.mp4'
           altText='video'
