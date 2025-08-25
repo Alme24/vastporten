@@ -20,6 +20,8 @@ export default function Footer({onOpenModal} : FooterProps) {
                     >033-48 01 96</Button>
                     <Button
                         href="/contact"
+                        icon={<Image src="/images/contact_mail.svg" alt="Email" width={28} height={28} />}
+                        iconPosition="left"
                     >{t("contactanos")}</Button>
                     <Button 
                         onClick={onOpenModal}
