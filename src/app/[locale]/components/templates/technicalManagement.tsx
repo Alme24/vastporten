@@ -25,16 +25,16 @@ export default function Technical() {
                 title={t("tituloVideo")}
             />
             <motion.p
-                className="font-family-noto-telugu text-normal text-center text-textoscuro w-3/4 mx-auto py-40"
+                className="font-family-noto-telugu text-normal md:text-center text-justify text-textoscuro w-3/4 mx-auto my-15 md:my-40"
                 initial={{ opacity: 0, y: "20vh" }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.3 }}
                 transition={{
                     duration: 1,
                     ease: "easeIn"
                 }}
             >{t("descripcion")}</motion.p>
-            <div className="relative w-full lg:h-[730px]">
+            <div className="relative w-full lg:h-[920px]">
                 <Image
                     src={"/images/cards/casa.webp"}
                     alt=""
@@ -55,9 +55,9 @@ export default function Technical() {
                     <p className="text-[16px] mt-3">{t("descripcion2")}</p>
                 </motion.div>
             </div>
-            <div className="mt-20 w-3/4 justify-items-center mx-auto">
+            <div className="md:mt-20 mb-10 w-3/4 justify-items-center mx-auto">
                 <Title title={t("titulo1")} />
-                <div className="py-10">
+                <div className="md:py-10">
                     <Card
                         number="01"
                         title={t("card1.titulo")}

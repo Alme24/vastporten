@@ -16,7 +16,7 @@ export default function Why() {
     const handleCloseModal = () => setIsModalOpen(false);
     return (
         <div>
-            <Header></Header>
+            <Header />
             <div className="bg-white h-28 pb-14"></div>
             <div className="relative w-full h-[330px]">
                 <Image
@@ -41,7 +41,7 @@ export default function Why() {
             </div>
 
             <motion.p
-                className="font-['Noto_Sans_Telugu'] text-[#4C4C4C] leading-relaxed md:text-center text-justify text-[16px] font-normal my-20 max-w-2/3 md:my-50 justify-items-center mx-auto"
+                className="font-family-noto-telugu text-textoscuro leading-relaxed md:text-center text-justify text-4 font-normal my-20 w-4/5 md:max-w-2/3 md:my-50 justify-items-center mx-auto"
                 initial={{ opacity: 0, x: "40vw" }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.5 }}

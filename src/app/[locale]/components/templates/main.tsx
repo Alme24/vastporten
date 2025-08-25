@@ -22,7 +22,7 @@ export default function Main() {
             <Header />
             <CanvaAnimated />
             <motion.div
-                className="pt-40 justify-items-center"
+                className="md:py-40  justify-center w-full"
                 initial={{ opacity: 0, x: "10vw" }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.8 }}

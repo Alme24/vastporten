@@ -5,7 +5,7 @@ type Props = {
 
 export const Title = ({ title, description }: Props) => {
     return (
-        <div className="text-left">
+        <div className="text-left md:text-center">
             <h1 
                 className="text-textoscuro font-family-noto-telugu text-[32px] sm:text-5xl font-[600]" 
             >

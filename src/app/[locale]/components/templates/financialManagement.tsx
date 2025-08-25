@@ -36,10 +36,10 @@ export default function FinancialManagement() {
         </motion.div>
         <FinancialCards />
 
-      <div className=' mt-40 w-3/4'>
+      <div className=' md:mt-40 mt-10 w-3/4 text-center'>
         <Title title={t('subtitulo')} />
       </div>
-      <section className='w-3/4 mt-10'>
+      <section className='w-3/4 md:mt-10'>
         <Card
           number='01'
           title={t('card1.titulo')}
@@ -92,7 +92,7 @@ export default function FinancialManagement() {
       <div className=' md:mt-40 mt-10'>
         <Title title={t('subtitulo2')} />
       </div>
-        <div className='md:w-49/100 w-3/4 text-center font-family-noto-telugu text-textoscuro font-[400] text-[16px] mt-4 md:mb-40 mb-10'>
+        <div className='md:w-49/100 w-3/4 md:text-center text-justify font-family-noto-telugu text-textoscuro font-[400] text-[16px] mt-4 md:mb-40 mb-10'>
         <p className='whitespace-pre-line'>{t('descripcion2')}</p>
       </div>
       </div>

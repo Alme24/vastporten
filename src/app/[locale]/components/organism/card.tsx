@@ -18,7 +18,7 @@ export default function Card({
     imagePosition = "left"
 }: CardProps) {
     return (
-        <div className={`flex flex-col md:flex-row ${imagePosition === "right" ? "md:flex-row-reverse" : ""} gap-6`}>
+        <div className={`flex flex-col-reverse md:flex-row ${imagePosition === "right" ? "md:flex-row-reverse" : ""} gap-6`}>
             <Image
                 src={imageSrc}
                 alt={imageAlt}
@@ -28,8 +28,8 @@ export default function Card({
             />
 
             <div className="flex flex-col justify-end md:w-1/2 py-4 md:px-2">
-                <div className="shadow-xl/20  rounded-xl w-[148px] h-[105px] flex justify-center items-center">
-                    <label className="text-textoscuro text-[100px] font-family-noto-serif-telugu tracking-[0] leading-[100%] font-[800] text-center">{number}</label>
+                <div className="shadow-xl/20  rounded-xl w-[60px] md:w-[148px] h-[60px] md:h-[105px] flex justify-center items-center">
+                    <label className="text-textoscuro text-2xl md:text-[100px] font-family-noto-serif-telugu tracking-[0] leading-[100%] font-[800] text-center">{number}</label>
                 </div>
                 <h3 className="mt-4 text-[20px] text-textoscuro font-family-noto-telugu font-[700]">{title}</h3>
                 <p className="mt-2 font-family-noto-telugu text-textoscuro font-[400] text-[14px] md:text-[16px] text-justify">{description}</p>

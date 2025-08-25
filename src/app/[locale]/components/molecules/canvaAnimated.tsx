@@ -37,11 +37,11 @@ export default function CanvaAnimated() {
       </div>
 
       <motion.div
-        initial={{ scale: 1, x: 0, y: -10 }}
+        initial={{ scale: 1, x: 0, y: -300 }}
         animate={
           startAnimation
             ? { scale: 1, x: 0, y: 0 }
-            : { scale: 1, x: 0, y: -10 }
+            : { scale: 1, x: 0, y: -300 }
         }
         transition={{ duration: 1, ease: "easeOut" }}
         className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"

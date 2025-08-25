@@ -31,7 +31,7 @@ export default function OurServices() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0 }}
                     transition={{
-                        duration: 1.5,
+                        duration: 1,
                         ease: "easeOut"
                     }}
                 >
@@ -40,7 +40,7 @@ export default function OurServices() {
             </div>
 
             <motion.p
-                className="font-family-noto-telugu text-textoscuro leading-relaxed text-center text-[14px] md:text-[16px] font-normal max-w-2/3 md:my-50 my-20 justify-items-center mx-auto"
+                className="font-family-noto-telugu text-textoscuro leading-relaxed text-center text-[14px] md:text-[16px] font-normal max-w-1/2 md:my-50 my-20 justify-items-center mx-auto"
                 initial={{ opacity: 0, y: "20vh" }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0 }}
@@ -53,7 +53,7 @@ export default function OurServices() {
             </motion.p>
 
             <motion.div
-                className="justify-items-center py-8 px-10 md:max-w-1/2 my-15 mx-auto bg-[#F4F4F4] rounded-[8px] shadow-lg"
+                className="justify-items-center py-8 px-10 md:max-w-1/3 my-15 mx-auto bg-[#F4F4F4] rounded-[8px] shadow-lg"
                 initial={{ opacity: 0, x: "-50vw" }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.1 }}
@@ -84,7 +84,7 @@ export default function OurServices() {
 
 
             <motion.div
-                className="justify-items-center w-3/4 mx-auto md:my-50 mb-10"
+                className="justify-items-center w-3/4 mx-auto md:my-40 mb-10"
                 initial={{ opacity: 0, x: "-50vw" }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.1 }}
@@ -94,7 +94,7 @@ export default function OurServices() {
                 }}
             >
                 <Title title={t("subtitulo")} />
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 p-2 justify-items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 p-2 justify-items-center mt-0 md:mt-5">
                     <Image
                         src={"/images/hombres.webp"}
                         alt=""
@@ -102,7 +102,7 @@ export default function OurServices() {
                         height={344}
                         className="w-full h-auto"
                     />
-                    <div className="col-span-2 w-auto lg:ml-10">
+                    <div className="col-span-2 w-auto lg:ml-10 md:mt-0 mt-5">
                         <Subtitle description={t("descripcion2")} />
                     </div>
                 </div>
