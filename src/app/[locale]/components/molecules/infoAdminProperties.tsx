@@ -6,9 +6,9 @@ import { useTranslations } from "next-intl";
 export default function InfoAdminProperties() {
   const t = useTranslations("infoAdminProperties");
   return (
-    <section className="w-3/4 mx-auto md:px-4 md:py-12 flex flex-col md:flex-row gap-8 font-family-noto-telugu">
+    <section className="w-3/4 mx-auto lg:px-4 lg:py-12 flex flex-col lg:flex-row gap-8 font-family-noto-telugu">
       <motion.div 
-        className="relative w-full md:w-[40%] flex-shrink-0"
+        className="relative w-full lg:w-[40%] flex-shrink-0"
         initial={{ opacity: 0, x: -150 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
@@ -24,10 +24,10 @@ export default function InfoAdminProperties() {
         </div>
       </motion.div>
 
-      <div className="flex flex-col justify-between w-full md:w-[60%] gap-6">
+      <div className="flex flex-col justify-between w-full lg:w-[60%] gap-6">
         <div>
           <motion.h2
-            className="text-3xl md:text-5xl font-bold text-textoscuro leading-snug mb-4"
+            className="text-3xl lg:text-5xl font-bold text-textoscuro leading-snug mb-4"
             initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
