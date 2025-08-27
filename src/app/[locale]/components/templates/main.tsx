@@ -117,7 +117,7 @@ export default function Main() {
                 </motion.div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-11/12 lg:w-3/4 justify-items-center mx-auto pt-14 md:mb-25 mb-10">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-5/6 lg:w-3/4 justify-items-center mx-auto pt-14 md:mb-25 mb-10">
                 <motion.img
                     src={"/images/living.webp"}
                     alt="Living room"

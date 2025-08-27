@@ -29,14 +29,15 @@ export default function CanvaVideo({
                 muted
                 playsInline
                 aria-label={altText}
-                className="absolute top-0 left-0 w-full h-full object-cover z-0"
+                className="absolute top-0 left-0 w-full h-full object-cover z-[0]"
             >
                 <source src={videoSrc} type="video/mp4" />
                 {t('video')}
             </video>
 
             {/* Overlay oscuro con opacidad */}
-            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-10" />
+            <div className="absolute top-0 left-0 w-full h-full z-[10]"
+            style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }} />
 
             {/* Contenido encima del video */}
             <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4">

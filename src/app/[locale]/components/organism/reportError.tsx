@@ -203,7 +203,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                     {t("titulo")}
                 </h2>
                 <p className=" text-textoscuro md:text-4 text-[14px] mt-5 md:mt-0">{t("descripcion")}</p>
-                <form onSubmit={handleSubmit} className="flex flex-col md:grid-cols-6 gap-4 w-full my-6">
+                <form onSubmit={handleSubmit} className="flex flex-col md:grid sm:grid-cols-6 gap-4 w-full my-6">
                     <div className="flex flex-col col-span-3">
                         <input
                             type="text"

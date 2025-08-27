@@ -34,7 +34,7 @@ export default function AdminProperties() {
         title={t('titulo')}
       />
       <motion.div
-        className="text-[16px] text-textoscuro font-family-noto-telugu w-3/4 sm:w-1/2 mx-auto my-15 md:my-40 md:text-center text-justify"
+        className="text-[16px] text-textoscuro font-family-noto-telugu w-3/4 md:w-1/2 mx-auto my-15 md:my-40 md:text-center text-justify"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"

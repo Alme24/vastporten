@@ -40,7 +40,7 @@ export default function OurServices() {
             </div>
 
             <motion.p
-                className="font-family-noto-telugu text-textoscuro leading-relaxed text-center text-[14px] md:text-[16px] font-normal max-w-1/2 md:my-50 my-20 justify-items-center mx-auto"
+                className="font-family-noto-telugu text-textoscuro leading-relaxed w-5/6 lg:text-center text-justify text-[14px] md:text-[16px] font-normal lg:max-w-1/2 md:my-50 my-20 justify-items-center mx-auto"
                 initial={{ opacity: 0, y: "20vh" }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0 }}
@@ -53,7 +53,7 @@ export default function OurServices() {
             </motion.p>
 
             <motion.div
-                className="justify-items-center py-8 px-10 md:max-w-1/3 my-15 mx-auto bg-[#F4F4F4] rounded-[8px] shadow-lg"
+                className="justify-items-center py-8 px-10 md:max-w-3/4 lg:max-w-1/3 my-15 mx-auto bg-[#F4F4F4] rounded-[8px] shadow-lg"
                 initial={{ opacity: 0, x: "-50vw" }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.1 }}
