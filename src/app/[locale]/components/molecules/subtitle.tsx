@@ -12,7 +12,7 @@ export const Subtitle = ({ subtitle, description }: Props) => {
             </h2>
             )}
             {description && (
-            <p className="md:text-4 text-[14px] whitespace-pre-line text-justify">
+            <p className="md:text-base text-[14px] whitespace-pre-line text-justify">
             {description}
             </p>
             )}

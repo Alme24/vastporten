@@ -202,7 +202,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                 <h2 className="md:text-5xl mt-5 md:mt-0 text-3xl text-center font-family-noto-telugu text-textoscuro font-[600]">
                     {t("titulo")}
                 </h2>
-                <p className=" text-textoscuro md:text-4 text-[14px] mt-5 md:mt-0">{t("descripcion")}</p>
+                <p className=" text-textoscuro md:text-base text-[14px] mt-5 md:mt-0">{t("descripcion")}</p>
                 <form onSubmit={handleSubmit} className="flex flex-col md:grid sm:grid-cols-6 gap-4 w-full my-6">
                     <div className="flex flex-col col-span-3">
                         <input
@@ -212,7 +212,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             onChange={handleChange}
                             onBlur={() => validateField("nombre", form.nombre)}
                             placeholder={t("placeholder.nombre")}
-                            className="h-10 font-family-noto-telugu md:text-4 text-[12px] font-[500] custom-input"
+                            className="h-10 font-family-noto-telugu md:text-base text-[12px] font-[500] custom-input"
                         />
                         {errors.nombre && <span className="text-red-500 text-sm mt-1">{errors.nombre}</span>}
                     </div>
@@ -224,7 +224,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             onChange={handleChange}
                             onBlur={() => validateField("apellido", form.apellido)}
                             placeholder={t("placeholder.apellido")}
-                            className="h-10 font-family-noto-telugu md:text-4 text-[12px] font-[500] custom-input"
+                            className="h-10 font-family-noto-telugu md:text-base text-[12px] font-[500] custom-input"
                         />
                         {errors.apellido && <span className="text-red-500 text-sm mt-1">{errors.apellido}</span>}
                     </div>
@@ -236,7 +236,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             onChange={handleChange}
                             onBlur={() => validateField("telefono", form.telefono)}
                             placeholder={t("placeholder.telefono")}
-                            className="h-10 font-family-noto-telugu md:text-4 text-[12px] font-[500] custom-input"
+                            className="h-10 font-family-noto-telugu md:text-base text-[12px] font-[500] custom-input"
                         />
                         {errors.telefono && <span className="text-red-500 text-sm mt-1">{errors.telefono}</span>}
                     </div>
@@ -248,7 +248,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             onChange={handleChange}
                             onBlur={() => validateField("email", form.email)}
                             placeholder={t("placeholder.email")}
-                            className="h-10 font-family-noto-telugu md:text-4 text-[12px] font-[500] custom-input"
+                            className="h-10 font-family-noto-telugu md:text-base text-[12px] font-[500] custom-input"
                         />
                         {errors.email && <span className="text-red-500 text-sm mt-1">{errors.email}</span>}
                     </div>
@@ -260,7 +260,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             onChange={handleChange}
                             onBlur={() => validateField("asociacionVivienda", form.asociacionVivienda)}
                             placeholder={t("placeholder.vivienda")}
-                            className="h-10 font-family-noto-telugu md:text-4 text-[12px] font-[500] custom-input"
+                            className="h-10 font-family-noto-telugu md:text-base text-[12px] font-[500] custom-input"
                         />
                         {errors.asociacionVivienda && <span className="text-red-500 text-sm mt-1">{errors.asociacionVivienda}</span>}
                     </div>
@@ -272,7 +272,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             onChange={handleChange}
                             onBlur={() => validateField("numApartamento", form.numApartamento)}
                             placeholder={t("placeholder.apartamento")}
-                            className="h-10 font-family-noto-telugu md:text-4 text-[12px] font-[500] custom-input"
+                            className="h-10 font-family-noto-telugu md:text-base text-[12px] font-[500] custom-input"
                         />
                         {errors.numApartamento && <span className="text-red-500 text-sm mt-1">{errors.numApartamento}</span>}
                     </div>
@@ -284,7 +284,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             onChange={handleChange}
                             onBlur={() => validateField("llaveMaestra", form.llaveMaestra)}
                             placeholder={t("placeholder.llave")}
-                            className="h-10 font-family-noto-telugu md:text-4 text-[12px] font-[500] custom-input"
+                            className="h-10 font-family-noto-telugu md:text-base text-[12px] font-[500] custom-input"
                         />
                         {errors.llaveMaestra && <span className="text-red-500 text-sm mt-1">{errors.llaveMaestra}</span>}
                     </div>
@@ -296,7 +296,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             onChange={handleChange}
                             onBlur={() => validateField("direccion", form.direccion)}
                             placeholder={t("placeholder.direccion")}
-                            className="h-10 font-family-noto-telugu md:text-4 text-[12px] font-[500] custom-input"
+                            className="h-10 font-family-noto-telugu md:text-base text-[12px] font-[500] custom-input"
                         />
                         {errors.direccion && <span className="text-red-500 text-sm mt-1">{errors.direccion}</span>}
                     </div>
@@ -308,7 +308,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             onChange={handleChange}
                             onBlur={() => validateField("dirPostal", form.dirPostal)}
                             placeholder={t("placeholder.dirPostal")}
-                            className="h-10 font-family-noto-telugu md:text-4 text-[12px] font-[500] custom-input"
+                            className="h-10 font-family-noto-telugu md:text-base text-[12px] font-[500] custom-input"
                         />
                         {errors.dirPostal && <span className="text-red-500 text-sm mt-1">{errors.dirPostal}</span>}
                     </div>
@@ -320,7 +320,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             onChange={handleChange}
                             onBlur={() => validateField("piso", form.piso)}
                             placeholder={t("placeholder.piso")}
-                            className="h-10 font-family-noto-telugu md:text-4 text-[12px] font-[500] custom-input"
+                            className="h-10 font-family-noto-telugu md:text-base text-[12px] font-[500] custom-input"
                         />
                         {errors.piso && <span className="text-red-500 text-sm mt-1">{errors.piso}</span>}
                     </div>
@@ -331,7 +331,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             onChange={handleChange}
                             onBlur={() => validateField("mensaje", form.mensaje)}
                             placeholder={t("placeholder.mensaje")}
-                            className="font-family-noto-telugu md:text-4 text-[12px] font-[500] custom-input p-4 resize-none"
+                            className="font-family-noto-telugu md:text-base text-[12px] font-[500] custom-input p-4 resize-none"
                             rows={5}
                         />
                         {errors.mensaje && <span className="text-red-500 text-sm mt-1">{errors.mensaje}</span>}
@@ -345,7 +345,7 @@ export default function ReportError({ onClose }: ReportErrorProps) {
                             onBlur={() => validateField("privacy", form.privacy)}
                             className="accent-teal-600 h-6 w-6"
                         />
-                        <label htmlFor="privacy" className="md:text-4 text-[14px] font-family-noto-telugu text-textoscuro">
+                        <label htmlFor="privacy" className="md:text-base text-[14px] font-family-noto-telugu text-textoscuro">
                             {t("privacidad")}
                         </label>
                     </div>

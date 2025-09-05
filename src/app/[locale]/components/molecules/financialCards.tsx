@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function FinancialCards() {
+  const t = useTranslations('financialManagement');
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-9/10 lg:w-3/4 mx-auto">
       
@@ -22,14 +24,10 @@ export default function FinancialCards() {
         <div className="absolute inset-0 flex items-center justify-center p-4">
           <div className="bg-white rounded-lg shadow-lg p-4 lg:p-8 max-w-lg lg:text-center text-justify">
             <h3 className="text-lg font-bold mb-4 text-center">
-              Westgate – Para sus necesidades financieras
+              {t("card1-component-title")}
             </h3>
             <p className="text-gray-700 text-sm lg:text-base leading-relaxed">
-              Al contratarnos para la administración de su propiedad, puede
-              estar seguro de que revisaremos su propiedad regularmente para
-              garantizar que todo se mantenga en buen estado. Si surge algún
-              problema, nos desplazamos rápidamente al lugar y le brindamos la
-              asistencia que necesita.
+              {t("card1-component-description")}
             </p>
           </div>
         </div>
@@ -52,16 +50,10 @@ export default function FinancialCards() {
         <div className="absolute inset-0 flex items-center justify-center p-4">
           <div className="bg-white rounded-lg shadow-lg p-4 lg:p-8 max-w-lg lg:text-center text-justify">
             <h3 className="text-lg font-bold mb-4 text-center">
-              Seguridad a través de total transparencia
+              {t("card2-component-title")}
             </h3>
             <p className="text-textoscuro text-sm lg:text-base leading-relaxed">
-              Por supuesto, en Västsporten trabajamos con total transparencia
-              para que usted, como cliente, pueda seguir nuestro trabajo y
-              participar en la documentación y demás material. También nos
-              encargamos del seguimiento continuo. Si necesita adaptar el
-              trabajo, el contrato o está considerando realizar trabajos
-              adicionales durante la vigencia del mismo, simplemente contacte
-              con uno de nuestros gestores y nos encargaremos de solucionarlo.
+              {t("card2-component-description")}
             </p>
           </div>
         </div>
