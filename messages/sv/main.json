@@ -1,19 +1,19 @@
 {
-    "subtitulo": "Ett lokalt förvaltningsbolag som bryr sig",
+    "subtitulo": "Ekonomisk förvaltning som bryr sig",
     "descripcion": "Västporten erbjuder heltäckande fastighetsförvaltning som inkluderar teknisk förvaltning, ekonomisk förvaltning och underhåll. Vår vision är att erbjuda förstklassig fastighetsförvaltning, anpassad efter våra kunders behov och förväntningar. Vi ser oss som ett lokalt, pålitligt, mycket kompetent och modernt företag. Varje kund ska känna sig unik tack vare vår personliga service.",
     "subtitulo2": "Våra tjänster",
     "descripcion2": "Vi erbjuder helhetslösningar för dig som bostadsrättsförening eller fastighetsägare, där vi tar fullt ansvar för dina fastigheter. Det innebär att vi kan ta hand om allt, eller utvalda delar, beroende på dina behov som fastighetsägare.",
     "card1": {
         "titulo": "Ekonomisk förvaltning",
-        "descripcion": "Om du behöver hjälp med bokföring är vi på Västporten redo att ta hand om det."
+        "descripcion": "Med vår hjälp slipper ni bekymra er över administration och kan istället fokusera på föreningens långsiktiga mål. Vi arbetar transparent och lyhört - ni får alltid tillgång till aktuella siffror och personlig kontakt med en förvaltare som känner just er förening."
     },
     "card2": {
-        "titulo": "Fastighetsförvaltning",
-        "descripcion": "Med oss kan du vara säker på att allt fungerar som det ska."
+        "titulo": "Fastighetsservice",
+        "descripcion": "En välskött fastighet skapar trygghet, trivsel och långsiktigt värde för både styrelse och boende. Vi erbjuder komplett fastighetsskötsel anpassad efter er bostadsrättsförenings behov med fokus på kvalitet, service och långsiktig hållbarhet."
     },
     "card3": {
         "titulo": "Teknisk förvaltning",
-        "descripcion": "Genom vår tekniska förvaltning får du hjälp med allt som rör fastighetsadministration och styrelsestöd."
+        "descripcion": "Med oss som teknisk förvaltare får ni en trygg och kunnig partner som ser till att fastigheten behåller sitt värde, boendemiljön är trivsam och driftkostnaderna hålls nere."
     },
     "busca": "Sök lägenhet",
     "emailText": "Skicka ett e-postmeddelande till <a>info@vastporten.se</a> där du beskriver din profil och vilken typ av lägenhet du söker, samt storlek och hyresnivå. För att bli godkänd som hyresgäst behöver du ha god kreditvärdighet utan betalningsanmärkningar, stabil inkomst och goda referenser från tidigare hyresvärdar.\nEnligt GDPR-riktlinjerna ska du INTE inkludera ditt personnummer i e-postmeddelandet, detta begärs i ett senare skede.\nOm en visning behövs kontaktar vi dig.",
