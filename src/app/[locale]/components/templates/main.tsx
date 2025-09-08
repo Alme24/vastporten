@@ -81,6 +81,7 @@ export default function Main() {
                         description={t("card1.descripcion")}
                         imageSrc="/images/cardsHome/iluong-01.svg"
                         imageAlt="gestion financiera"
+                        href="financialManagement"
                     />
                 </motion.div>
                 <motion.div
@@ -97,6 +98,7 @@ export default function Main() {
                         description={t("card2.descripcion")}
                         imageSrc="/images/cardsHome/iluong-02.svg"
                         imageAlt="adminitracion de propiedades"
+                        href="adminProperties"
                     />
                 </motion.div>
                 <motion.div
@@ -113,6 +115,7 @@ export default function Main() {
                         description={t("card3.descripcion")}
                         imageSrc="/images/cardsHome/iluong-03.svg"
                         imageAlt="Gestion tecnica"
+                        href="technicalManagement"
                     />
                 </motion.div>
             </div>

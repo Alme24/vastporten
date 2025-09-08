@@ -1,9 +1,9 @@
 {
     "servicio": "Tjänster",
     "label": {
-        "administracion": "Fastighetsförvaltning",
+        "administracion": "Fastighetsservice",
         "tecnica": "Teknisk förvaltning",
-        "financiera": "Finansiell förvaltning",
+        "financiera": "Ekonomisk förvaltning",
         "otros": "Övriga tjänster"
     },
     "buscar": "Sök lägenhet",
