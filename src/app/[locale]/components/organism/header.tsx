@@ -84,6 +84,9 @@ export default function Header() {
         <Button href="/whyChooseUs" variant={buttonVariant}>
           {t("porQueNosotros")}
         </Button>
+        <Button href="/documents" variant={buttonVariant}>
+          {t("documentos")}
+        </Button>
         <Button href="/contact" variant={buttonVariant}>
           {t("contacto")}
         </Button>

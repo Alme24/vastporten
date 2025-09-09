@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import ReportError from '../organism/reportError'
 export default function FinancialManagement() {
-  const t = useTranslations('financialManagement');
+  const t = useTranslations('documents');
 
   const [isModalOpen, setIsModalOpen] = useState(false);
     const handleOpenModal = () => setIsModalOpen(true);

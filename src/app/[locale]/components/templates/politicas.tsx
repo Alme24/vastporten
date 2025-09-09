@@ -22,7 +22,9 @@ export default function Politica() {
       <div className="grid grid-cols-1 lg:grid-cols-2 sm:justify-items-center lg:justify-items-end">
         <div className="px-8 lg:px-30 pt-28 lg:pt-36">
           <div className="lg:mt-30 my-10">
-            <h1 className="md:text-5xl text-3xl font-family-noto-telugu font-[600] text-textoscuro">{t("titulo")}</h1>
+            <h1 className="md:text-5xl text-3xl font-family-noto-telugu font-[700] text-textoscuro leading-tight md:leading-[1.4]">
+                {t("titulo")}
+            </h1>
           </div>
           <Subtitle description={t("descripcion")}></Subtitle>
           <Subtitle
