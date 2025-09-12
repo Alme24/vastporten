@@ -128,6 +128,9 @@ export default function Header() {
           <Button href="/whyChooseUs" variant="btnHeaderWhite">
             {t("porQueNosotros")}
           </Button>
+          <Button href="/documents" variant="btnHeaderWhite">
+            {t("documentos")}
+          </Button>
           <Button href="/contact" variant="btnHeaderWhite">
             {t("contacto")}
           </Button>
